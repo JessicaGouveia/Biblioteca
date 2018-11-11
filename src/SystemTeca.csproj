@@ -223,9 +223,15 @@
       <DependentUpon>FormLoad.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\CategoriaModel.cs" />
+    <Compile Include="Models\ColecaoMidia.cs" />
+    <Compile Include="Models\ColecaoModel.cs" />
     <Compile Include="Models\DbResultadoAcao.cs" />
+    <Compile Include="Models\EmprestimoModel.cs" />
     <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\LogSistemaModel.cs" />
+    <Compile Include="Models\MidiaModel.cs" />
     <Compile Include="Models\OrigemModel.cs" />
+    <Compile Include="Models\PessoaModel.cs" />
     <Compile Include="Models\UsuarioModel.cs" />
     <Compile Include="Pesquisas\FmrPesquisa.cs">
       <SubType>Form</SubType>
