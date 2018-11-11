@@ -7,26 +7,41 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SystemTeca.Controllers;
+using SystemTeca.Models;
 
 namespace SystemTeca.Cadastros
 {
     public partial class FmrCadastroOrigem : Form
     {
+        private OrigemController origemController;
+        private OrigemModel origem;
+
+
         public FmrCadastroOrigem()
         {
             InitializeComponent();
+            origemController = new OrigemController();
+            origem = new OrigemModel();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            this.Close();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            string Nome = NomeTxT.Text;
-
-            // FUnção de criação no Banco
+            if (NomeTxT.Text != "")
+            {
+                origem.NomeOrigem = NomeTxT.Text;
+                var dbResultado = origemController.Inserir(origem);
+                MessageBox.Show(dbResultado.Mensagem);
+                if (dbResultado.NumRetorno > 0)
+                {
+                    this.Close();
+                }
+            }
         }
     }
 }

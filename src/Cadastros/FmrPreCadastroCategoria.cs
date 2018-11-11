@@ -14,9 +14,9 @@ namespace SystemTeca.Cadastros
 {
     public partial class FmrPreCadastroCategoria : Form
     {
-        public CategoriaController categoriaController;
+        private CategoriaController categoriaController;
 
-        public IEnumerable<CategoriaModel> Categorias { get; set; }
+        private IEnumerable<CategoriaModel> Categorias;
 
         public FmrPreCadastroCategoria()
         {
@@ -66,5 +66,17 @@ namespace SystemTeca.Cadastros
             
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text != "")
+            {
+                Categorias = categoriaController.ConsultaPorNome(textBox1.Text);
+            }
+            else
+            {
+                Categorias = categoriaController.ConsultaTodos();
+            }
+            AtualizaDataGrid();
+        }
     }
 }
