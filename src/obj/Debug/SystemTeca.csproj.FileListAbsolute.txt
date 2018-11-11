@@ -1,0 +1,151 @@
+C:\Users\Microsoft\Desktop\SystemTeca\SystemTeca\bin\Debug\SystemTeca.exe.config
+C:\Users\Microsoft\Desktop\SystemTeca\SystemTeca\bin\Debug\SystemTeca.exe
+C:\Users\Microsoft\Desktop\SystemTeca\SystemTeca\bin\Debug\SystemTeca.pdb
+C:\Users\Microsoft\Desktop\SystemTeca\SystemTeca\obj\Debug\SystemTeca.csprojAssemblyReference.cache
+C:\Users\Microsoft\Desktop\SystemTeca\SystemTeca\obj\Debug\SystemTeca.Form1.resources
+C:\Users\Microsoft\Desktop\SystemTeca\SystemTeca\obj\Debug\SystemTeca.Properties.Resources.resources
+C:\Users\Microsoft\Desktop\SystemTeca\SystemTeca\obj\Debug\SystemTeca.csproj.GenerateResource.cache
+C:\Users\Microsoft\Desktop\SystemTeca\SystemTeca\obj\Debug\SystemTeca.csproj.CoreCompileInputs.cache
+C:\Users\Microsoft\Desktop\SystemTeca\SystemTeca\obj\Debug\SystemTeca.exe
+C:\Users\Microsoft\Desktop\SystemTeca\SystemTeca\obj\Debug\SystemTeca.pdb
+C:\Users\Microsoft\Desktop\SystemTeca\SystemTeca\obj\Debug\SystemTeca.FrmLogin.resources
+C:\Users\Microsoft\Desktop\SystemTeca\SystemTeca\obj\Debug\SystemTeca.FmrIndex.resources
+C:\Users\Microsoft\Desktop\SystemTeca\SystemTeca\obj\Debug\SystemTeca.Cadastros.FmrCadastroCategoria.resources
+C:\Users\Microsoft\Desktop\SystemTeca\SystemTeca\obj\Debug\SystemTeca.Configuracao.FmrConfiguracaoCadastroUsuario.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\bin\Debug\SystemTeca.exe.config
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\bin\Debug\SystemTeca.exe
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\bin\Debug\SystemTeca.pdb
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.csprojAssemblyReference.cache
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.Cadastros.FmrCadastroCategoria.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.Configuracao.FmrConfiguracaoCadastroUsuario.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.FmrIndex.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.FrmLogin.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.Properties.Resources.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.csproj.GenerateResource.cache
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.csproj.CoreCompileInputs.cache
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.exe
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.pdb
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.Cadastros.FmrCadastroOrigem.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.Consulta.FmrConsulta_Usuarios.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.Consulta.FmrConsultaCD.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.Consulta.FmrConsultaColecao.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.Consulta.FmrConsultaDVD.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.Consulta.FmrConsultaFantoches.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.Consulta.FmrConsultaLivros.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.Consulta.FmrConsultaLivrosPU.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.FmrDevolucao.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.FmrEmprestimo.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.FmrRelatorios.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.Pesquisa.FmrPesquisa.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.Cadastros.FmrCadastroMidia.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.Configuracao.FmrConfiguracaoCadastroFuncionario.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.FormLoad.resources
+C:\Users\Aluno\Desktop\SystemTeca - Copia\bin\Debug\SystemTeca.exe.config
+C:\Users\Aluno\Desktop\SystemTeca - Copia\bin\Debug\SystemTeca.exe
+C:\Users\Aluno\Desktop\SystemTeca - Copia\bin\Debug\SystemTeca.pdb
+C:\Users\Aluno\Desktop\SystemTeca - Copia\obj\Debug\SystemTeca.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\SystemTeca - Copia\obj\Debug\SystemTeca.Cadastros.FmrCadastroCategoria.resources
+C:\Users\Aluno\Desktop\SystemTeca - Copia\obj\Debug\SystemTeca.Cadastros.FmrCadastroMidia.resources
+C:\Users\Aluno\Desktop\SystemTeca - Copia\obj\Debug\SystemTeca.Cadastros.FmrCadastroMidiaSubTitulo.resources
+C:\Users\Aluno\Desktop\SystemTeca - Copia\obj\Debug\SystemTeca.Cadastros.FmrCadastroOrigem.resources
+C:\Users\Aluno\Desktop\SystemTeca - Copia\obj\Debug\SystemTeca.Configuracao.FmrConfiguracaoCadastroFuncionario.resources
+C:\Users\Aluno\Desktop\SystemTeca - Copia\obj\Debug\SystemTeca.Configuracao.FmrConfiguracaoCadastroUsuario.resources
+C:\Users\Aluno\Desktop\SystemTeca - Copia\obj\Debug\SystemTeca.Consulta.FmrConsulta_Usuarios.resources
+C:\Users\Aluno\Desktop\SystemTeca - Copia\obj\Debug\SystemTeca.Consulta.FmrConsultaCD.resources
+C:\Users\Aluno\Desktop\SystemTeca - Copia\obj\Debug\SystemTeca.Consulta.FmrConsultaColecao.resources
+C:\Users\Aluno\Desktop\SystemTeca - Copia\obj\Debug\SystemTeca.Consulta.FmrConsultaDVD.resources
+C:\Users\Aluno\Desktop\SystemTeca - Copia\obj\Debug\SystemTeca.Consulta.FmrConsultaFantoches.resources
+C:\Users\Aluno\Desktop\SystemTeca - Copia\obj\Debug\SystemTeca.Consulta.FmrConsultaLivros.resources
+C:\Users\Aluno\Desktop\SystemTeca - Copia\obj\Debug\SystemTeca.Consulta.FmrConsultaLivrosPU.resources
+C:\Users\Aluno\Desktop\SystemTeca - Copia\obj\Debug\SystemTeca.FmrDevolucao.resources
+C:\Users\Aluno\Desktop\SystemTeca - Copia\obj\Debug\SystemTeca.FmrEmprestimo.resources
+C:\Users\Aluno\Desktop\SystemTeca - Copia\obj\Debug\SystemTeca.FmrIndex.resources
+C:\Users\Aluno\Desktop\SystemTeca - Copia\obj\Debug\SystemTeca.FmrRelatorios.resources
+C:\Users\Aluno\Desktop\SystemTeca - Copia\obj\Debug\SystemTeca.FrmLogin.resources
+C:\Users\Aluno\Desktop\SystemTeca - Copia\obj\Debug\SystemTeca.FormLoad.resources
+C:\Users\Aluno\Desktop\SystemTeca - Copia\obj\Debug\SystemTeca.Pesquisa.FmrPesquisa.resources
+C:\Users\Aluno\Desktop\SystemTeca - Copia\obj\Debug\SystemTeca.Properties.Resources.resources
+C:\Users\Aluno\Desktop\SystemTeca - Copia\obj\Debug\SystemTeca.csproj.GenerateResource.cache
+C:\Users\Aluno\Desktop\SystemTeca - Copia\obj\Debug\SystemTeca.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Desktop\SystemTeca - Copia\obj\Debug\SystemTeca.exe
+C:\Users\Aluno\Desktop\SystemTeca - Copia\obj\Debug\SystemTeca.pdb
+C:\Users\aluno\Desktop\Projeto Estagio 3\Versão 2.0\SystemTeca - Copia\bin\Debug\SystemTeca.exe.config
+C:\Users\aluno\Desktop\Projeto Estagio 3\Versão 2.0\SystemTeca - Copia\bin\Debug\SystemTeca.exe
+C:\Users\aluno\Desktop\Projeto Estagio 3\Versão 2.0\SystemTeca - Copia\bin\Debug\SystemTeca.pdb
+C:\Users\aluno\Desktop\Projeto Estagio 3\Versão 2.0\SystemTeca - Copia\obj\Debug\SystemTeca.csprojAssemblyReference.cache
+C:\Users\aluno\Desktop\Projeto Estagio 3\Versão 2.0\SystemTeca - Copia\obj\Debug\SystemTeca.Cadastros.FmrCadastroCategoria.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\Versão 2.0\SystemTeca - Copia\obj\Debug\SystemTeca.Cadastros.FmrCadastroMidia.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\Versão 2.0\SystemTeca - Copia\obj\Debug\SystemTeca.Cadastros.FmrCadastroMidiaSubTitulo.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\Versão 2.0\SystemTeca - Copia\obj\Debug\SystemTeca.Cadastros.FmrCadastroOrigem.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\Versão 2.0\SystemTeca - Copia\obj\Debug\SystemTeca.Configuracao.FmrConfiguracaoCadastroFuncionario.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\Versão 2.0\SystemTeca - Copia\obj\Debug\SystemTeca.Configuracao.FmrConfiguracaoCadastroUsuario.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\Versão 2.0\SystemTeca - Copia\obj\Debug\SystemTeca.Consulta.FmrConsulta_Usuarios.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\Versão 2.0\SystemTeca - Copia\obj\Debug\SystemTeca.Consulta.FmrConsultaCD.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\Versão 2.0\SystemTeca - Copia\obj\Debug\SystemTeca.Consulta.FmrConsultaColecao.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\Versão 2.0\SystemTeca - Copia\obj\Debug\SystemTeca.Consulta.FmrConsultaDVD.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\Versão 2.0\SystemTeca - Copia\obj\Debug\SystemTeca.Consulta.FmrConsultaFantoches.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\Versão 2.0\SystemTeca - Copia\obj\Debug\SystemTeca.Consulta.FmrConsultaLivros.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\Versão 2.0\SystemTeca - Copia\obj\Debug\SystemTeca.Consulta.FmrConsultaLivrosPU.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\Versão 2.0\SystemTeca - Copia\obj\Debug\SystemTeca.FmrDevolucao.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\Versão 2.0\SystemTeca - Copia\obj\Debug\SystemTeca.FmrEmprestimo.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\Versão 2.0\SystemTeca - Copia\obj\Debug\SystemTeca.FmrIndex.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\Versão 2.0\SystemTeca - Copia\obj\Debug\SystemTeca.FmrRelatorios.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\Versão 2.0\SystemTeca - Copia\obj\Debug\SystemTeca.FrmLogin.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\Versão 2.0\SystemTeca - Copia\obj\Debug\SystemTeca.FormLoad.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\Versão 2.0\SystemTeca - Copia\obj\Debug\SystemTeca.Pesquisa.FmrPesquisa.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\Versão 2.0\SystemTeca - Copia\obj\Debug\SystemTeca.Properties.Resources.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\Versão 2.0\SystemTeca - Copia\obj\Debug\SystemTeca.csproj.GenerateResource.cache
+C:\Users\aluno\Desktop\Projeto Estagio 3\Versão 2.0\SystemTeca - Copia\obj\Debug\SystemTeca.csproj.CoreCompileInputs.cache
+C:\Users\aluno\Desktop\Projeto Estagio 3\Versão 2.0\SystemTeca - Copia\obj\Debug\SystemTeca.exe
+C:\Users\aluno\Desktop\Projeto Estagio 3\Versão 2.0\SystemTeca - Copia\obj\Debug\SystemTeca.pdb
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.Cadastros.FmrPreCadastroCategoria.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.Cadastros.FmrPreCadastroOrigem.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.Cadastros.FmrCadastroColecao.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.Cadastros.FmrPreCadastroColecao.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.Cadastros.Filtros.FmrFiltroCategoria.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.Cadastros.Filtros.FmrFiltroColecao.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.Cadastros.Filtros.FmrFiltroMidia.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.Cadastros.Filtros.FmrFiltroOrigem.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.Cadastros.FmrPreCadastroMidia.resources
+C:\Users\aluno\Desktop\Projeto Estagio 3\SystemOTeca\SystemTeca\obj\Debug\SystemTeca.Ajuda.FmrAjudaSobre.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\bin\Debug\SystemTeca.exe.config
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\bin\Debug\SystemTeca.exe
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\bin\Debug\SystemTeca.pdb
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.Ajuda.FmrAjudaSobre.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.Cadastros.Filtros.FmrFiltroCategoria.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.Cadastros.Filtros.FmrFiltroColecao.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.Cadastros.Filtros.FmrFiltroMidia.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.Cadastros.Filtros.FmrFiltroOrigem.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.Cadastros.FmrCadastroCategoria.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.Cadastros.FmrCadastroColecao.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.Cadastros.FmrCadastroMidia.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.Cadastros.FmrCadastroOrigem.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.Cadastros.FmrPreCadastroCategoria.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.Cadastros.FmrPreCadastroColecao.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.Cadastros.FmrPreCadastroMidia.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.Cadastros.FmrPreCadastroOrigem.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.Configuracao.FmrConfiguracaoCadastroFuncionario.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.Configuracao.FmrConfiguracaoCadastroUsuario.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.Consulta.FmrConsulta_Usuarios.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.Consulta.FmrConsultaCD.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.Consulta.FmrConsultaColecao.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.Consulta.FmrConsultaDVD.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.Consulta.FmrConsultaFantoches.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.Consulta.FmrConsultaLivros.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.Consulta.FmrConsultaLivrosPU.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.FmrDevolucao.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.FmrEmprestimo.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.FmrIndex.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.FmrRelatorios.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.FrmLogin.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.FormLoad.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.Pesquisa.FmrPesquisa.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.Properties.Resources.resources
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.csproj.GenerateResource.cache
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.csproj.CoreCompileInputs.cache
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.exe
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.pdb
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\bin\Debug\Dapper.dll
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\bin\Debug\Dapper.xml
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.csprojAssemblyReference.cache
+C:\Users\Jéssica\Desktop\SystemOteca\SystemTeca\obj\Debug\SystemTeca.csproj.CopyComplete

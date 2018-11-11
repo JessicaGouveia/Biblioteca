@@ -1,0 +1,45 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace SystemTeca.Configuracao
+{
+    public partial class FmrConfiguracaoCadastroUsuario : Form
+    {
+        public FmrConfiguracaoCadastroUsuario()
+        {
+            InitializeComponent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void FmrConfiguracaoCadastroUsuario_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string Nome = NomeTxT.Text;
+            string Login = LoginTxT.Text;
+            string Senha = SenhaTxT.Text;
+
+            // Função de Cadastro no Banco
+
+        }
+    }
+}

@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{26D0270F-5501-4DF7-9370-AB62F85B8D98}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SystemTeca</RootNamespace>
+    <AssemblyName>SystemTeca</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.50.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Dapper.1.50.5\lib\net451\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ajuda\FmrAjudaSobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajuda\FmrAjudaSobre.Designer.cs">
+      <DependentUpon>FmrAjudaSobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Filtros\FmrFiltroCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Filtros\FmrFiltroCategoria.Designer.cs">
+      <DependentUpon>FmrFiltroCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Filtros\FmrFiltroColecao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Filtros\FmrFiltroColecao.Designer.cs">
+      <DependentUpon>FmrFiltroColecao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Filtros\FmrFiltroMidia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Filtros\FmrFiltroMidia.Designer.cs">
+      <DependentUpon>FmrFiltroMidia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Filtros\FmrFiltroOrigem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Filtros\FmrFiltroOrigem.Designer.cs">
+      <DependentUpon>FmrFiltroOrigem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FmrCadastroCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FmrCadastroCategoria.Designer.cs">
+      <DependentUpon>FmrCadastroCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FmrCadastroColecao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FmrCadastroColecao.Designer.cs">
+      <DependentUpon>FmrCadastroColecao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FmrCadastroMidia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FmrCadastroMidia.Designer.cs">
+      <DependentUpon>FmrCadastroMidia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FmrCadastroOrigem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FmrCadastroOrigem.Designer.cs">
+      <DependentUpon>FmrCadastroOrigem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FmrPreCadastroCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FmrPreCadastroCategoria.Designer.cs">
+      <DependentUpon>FmrPreCadastroCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FmrPreCadastroColecao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FmrPreCadastroColecao.Designer.cs">
+      <DependentUpon>FmrPreCadastroColecao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FmrPreCadastroMidia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FmrPreCadastroMidia.Designer.cs">
+      <DependentUpon>FmrPreCadastroMidia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FmrPreCadastroOrigem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FmrPreCadastroOrigem.Designer.cs">
+      <DependentUpon>FmrPreCadastroOrigem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracao\FmrConfiguracaoCadastroFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracao\FmrConfiguracaoCadastroFuncionario.Designer.cs">
+      <DependentUpon>FmrConfiguracaoCadastroFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracao\FmrConfiguracaoCadastroUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracao\FmrConfiguracaoCadastroUsuario.Designer.cs">
+      <DependentUpon>FmrConfiguracaoCadastroUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\FmrConsulta Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\FmrConsulta Usuarios.Designer.cs">
+      <DependentUpon>FmrConsulta Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\FmrConsultaCD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\FmrConsultaCD.Designer.cs">
+      <DependentUpon>FmrConsultaCD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\FmrConsultaColecao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\FmrConsultaColecao.Designer.cs">
+      <DependentUpon>FmrConsultaColecao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\FmrConsultaDVD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\FmrConsultaDVD.Designer.cs">
+      <DependentUpon>FmrConsultaDVD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\FmrConsultaFantoches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\FmrConsultaFantoches.Designer.cs">
+      <DependentUpon>FmrConsultaFantoches.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\FmrConsultaLivros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\FmrConsultaLivros.Designer.cs">
+      <DependentUpon>FmrConsultaLivros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\FmrConsultaLivrosPU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\FmrConsultaLivrosPU.Designer.cs">
+      <DependentUpon>FmrConsultaLivrosPU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\CategoriaController.cs" />
+    <Compile Include="Data\DataContext.cs" />
+    <Compile Include="Db.cs" />
+    <Compile Include="Index\FmrDevolucao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Index\FmrDevolucao.Designer.cs">
+      <DependentUpon>FmrDevolucao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Index\FmrEmprestimo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Index\FmrEmprestimo.Designer.cs">
+      <DependentUpon>FmrEmprestimo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmrIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmrIndex.Designer.cs">
+      <DependentUpon>FmrIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Index\FmrRelatorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Index\FmrRelatorios.Designer.cs">
+      <DependentUpon>FmrRelatorios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoad.Designer.cs">
+      <DependentUpon>FormLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CategoriaModel.cs" />
+    <Compile Include="Models\DbResultadoAcao.cs" />
+    <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\UsuarioModel.cs" />
+    <Compile Include="Pesquisas\FmrPesquisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pesquisas\FmrPesquisa.Designer.cs">
+      <DependentUpon>FmrPesquisa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usuario.cs" />
+    <EmbeddedResource Include="Ajuda\FmrAjudaSobre.resx">
+      <DependentUpon>FmrAjudaSobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Filtros\FmrFiltroCategoria.resx">
+      <DependentUpon>FmrFiltroCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Filtros\FmrFiltroColecao.resx">
+      <DependentUpon>FmrFiltroColecao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Filtros\FmrFiltroMidia.resx">
+      <DependentUpon>FmrFiltroMidia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Filtros\FmrFiltroOrigem.resx">
+      <DependentUpon>FmrFiltroOrigem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FmrCadastroCategoria.resx">
+      <DependentUpon>FmrCadastroCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FmrCadastroColecao.resx">
+      <DependentUpon>FmrCadastroColecao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FmrCadastroMidia.resx">
+      <DependentUpon>FmrCadastroMidia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FmrCadastroOrigem.resx">
+      <DependentUpon>FmrCadastroOrigem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FmrPreCadastroCategoria.resx">
+      <DependentUpon>FmrPreCadastroCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FmrPreCadastroColecao.resx">
+      <DependentUpon>FmrPreCadastroColecao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FmrPreCadastroMidia.resx">
+      <DependentUpon>FmrPreCadastroMidia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FmrPreCadastroOrigem.resx">
+      <DependentUpon>FmrPreCadastroOrigem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracao\FmrConfiguracaoCadastroFuncionario.resx">
+      <DependentUpon>FmrConfiguracaoCadastroFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracao\FmrConfiguracaoCadastroUsuario.resx">
+      <DependentUpon>FmrConfiguracaoCadastroUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\FmrConsulta Usuarios.resx">
+      <DependentUpon>FmrConsulta Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\FmrConsultaCD.resx">
+      <DependentUpon>FmrConsultaCD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\FmrConsultaColecao.resx">
+      <DependentUpon>FmrConsultaColecao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\FmrConsultaDVD.resx">
+      <DependentUpon>FmrConsultaDVD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\FmrConsultaFantoches.resx">
+      <DependentUpon>FmrConsultaFantoches.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\FmrConsultaLivros.resx">
+      <DependentUpon>FmrConsultaLivros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\FmrConsultaLivrosPU.resx">
+      <DependentUpon>FmrConsultaLivrosPU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Index\FmrDevolucao.resx">
+      <DependentUpon>FmrDevolucao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Index\FmrEmprestimo.resx">
+      <DependentUpon>FmrEmprestimo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmrIndex.resx">
+      <DependentUpon>FmrIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Index\FmrRelatorios.resx">
+      <DependentUpon>FmrRelatorios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoad.resx">
+      <DependentUpon>FormLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pesquisas\FmrPesquisa.resx">
+      <DependentUpon>FmrPesquisa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SISTEMA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SISTEMA3.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
