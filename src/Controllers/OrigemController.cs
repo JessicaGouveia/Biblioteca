@@ -14,11 +14,11 @@ namespace SystemTeca.Controllers
 
         #region Select
 
-        public IEnumerable<OrigemModel> ConsultaTodos()
-        {
-            return Db.Dc.Connection.Query<OrigemModel>("dbo.spConsultaOrigem",
-                commandType: CommandType.StoredProcedure);
-        }
+        //public IEnumerable<OrigemModel> ConsultaTodos()
+        //{
+        //    return Db.Dc.Connection.Query<OrigemModel>("dbo.spConsultaOrigem",
+        //        commandType: CommandType.StoredProcedure);
+        //}
 
         public OrigemModel ConsultaPorId(int id)
         {

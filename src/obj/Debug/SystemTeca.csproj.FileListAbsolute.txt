@@ -189,6 +189,7 @@ C:\Users\Jéssica\Documents\GitHub\Biblioteca\src\obj\Debug\SystemTeca.csproj.Co
 C:\Users\Jéssica\Documents\GitHub\Biblioteca\src\obj\Debug\SystemTeca.csproj.CopyComplete
 C:\Users\Jéssica\Documents\GitHub\Biblioteca\src\obj\Debug\SystemTeca.exe
 C:\Users\Jéssica\Documents\GitHub\Biblioteca\src\obj\Debug\SystemTeca.pdb
+<<<<<<< Updated upstream
 C:\Users\aluno\Desktop\Git\Biblioteca\src\bin\Debug\SystemTeca.exe.config
 C:\Users\aluno\Desktop\Git\Biblioteca\src\bin\Debug\SystemTeca.exe
 C:\Users\aluno\Desktop\Git\Biblioteca\src\bin\Debug\SystemTeca.pdb
@@ -238,3 +239,6 @@ C:\Users\aluno\Desktop\Git\Biblioteca\src\obj\Debug\SystemTeca.Cadastros.Alterar
 C:\Users\aluno\Desktop\Git\Biblioteca\src\obj\Debug\SystemTeca.Configuracao.Alterar.FmrAlterarFuncionario.resources
 C:\Users\aluno\Desktop\Git\Biblioteca\src\obj\Debug\SystemTeca.Configuracao.Alterar.FmrAlterarUsuario.resources
 C:\Users\aluno\Desktop\Git\Biblioteca\src\obj\Debug\SystemTeca.Configuracao.FmrConfiguracaoPreCadastroUsuario.resources
+=======
+C:\Users\Jéssica\Documents\GitHub\Biblioteca\src\obj\Debug\SystemTeca.csprojAssemblyReference.cache
+>>>>>>> Stashed changes
