@@ -14,11 +14,11 @@ namespace SystemTeca.Controllers
 
         #region Select
 
-        public IEnumerable<OrigemModel> ConsultaTodos()
-        {
-            return Db.Dc.Connection.Query<OrigemModel>("dbo.spConsultaOrigem",
-                commandType: CommandType.StoredProcedure);
-        }
+        //public IEnumerable<OrigemModel> ConsultaTodos()
+        //{
+        //    return Db.Dc.Connection.Query<OrigemModel>("dbo.spConsultaOrigem",
+        //        commandType: CommandType.StoredProcedure);
+        //}
 
         public OrigemModel ConsultaPorId(int id)
         {
@@ -40,6 +40,13 @@ namespace SystemTeca.Controllers
                 new {NomeOrigem = origem.NomeOrigem},
                 commandType: CommandType.StoredProcedure).FirstOrDefault();
         }
+
+        //public DbResultadoAcao Inserir(OrigemModel origem)
+        //{
+        //    return Db.Dc.Connection.Query<DbResultadoAcao>("dbo.spInserirOrigem",
+        //        new { NomeOrigem = origem.NomeOrigem },
+        //        commandType: CommandType.StoredProcedure).FirstOrDefault();
+        //}
 
         public DbResultadoAcao Atualizar(OrigemModel origem)
         {

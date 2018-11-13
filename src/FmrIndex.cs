@@ -30,15 +30,15 @@ namespace SystemTeca
         private void cadastroDeUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Cadastro de Usuario
-            Configuracao.FmrConfiguracaoCadastroUsuario FormCadastroUsuario = new Configuracao.FmrConfiguracaoCadastroUsuario();
-            FormCadastroUsuario.Show();
+            Configuracao.FmrConfiguracaoPreCadastroUsuario FormPreCadastroUsuario = new Configuracao.FmrConfiguracaoPreCadastroUsuario();
+            FormPreCadastroUsuario.Show();
         }
 
         private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Cadastro de Funcionario
-            Configuracao.FmrConfiguracaoCadastroFuncionario FormCadastroFuncionario = new Configuracao.FmrConfiguracaoCadastroFuncionario();
-            FormCadastroFuncionario.Show();
+            Configuracao.FmrConfiguracaoPreCadastroFuncionario FormPreCadastroFuncionario = new Configuracao.FmrConfiguracaoPreCadastroFuncionario();
+            FormPreCadastroFuncionario.Show();
         }
 
         private void mídiaDigitalToolStripMenuItem_Click(object sender, EventArgs e)
@@ -141,6 +141,11 @@ namespace SystemTeca
             Ajuda.FmrAjudaSobre FmrAjuda = new Ajuda.FmrAjudaSobre();
 
             FmrAjuda.Show();
+        }
+
+        private void NomeLogin_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

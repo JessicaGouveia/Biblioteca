@@ -56,6 +56,30 @@
     <Compile Include="Ajuda\FmrAjudaSobre.Designer.cs">
       <DependentUpon>FmrAjudaSobre.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cadastros\Alterar\FmrAlterarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Alterar\FmrAlterarCategoria.Designer.cs">
+      <DependentUpon>FmrAlterarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Alterar\FmrAlterarColecao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Alterar\FmrAlterarColecao.Designer.cs">
+      <DependentUpon>FmrAlterarColecao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Alterar\FmrAlterarMidia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Alterar\FmrAlterarMidia.Designer.cs">
+      <DependentUpon>FmrAlterarMidia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Alterar\FmrAlterarOrigem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Alterar\FmrAlterarOrigem.Designer.cs">
+      <DependentUpon>FmrAlterarOrigem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cadastros\Filtros\FmrFiltroCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +152,18 @@
     <Compile Include="Cadastros\FmrPreCadastroOrigem.Designer.cs">
       <DependentUpon>FmrPreCadastroOrigem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Configuracao\Alterar\FmrAlterarFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracao\Alterar\FmrAlterarFuncionario.Designer.cs">
+      <DependentUpon>FmrAlterarFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracao\Alterar\FmrAlterarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracao\Alterar\FmrAlterarUsuario.Designer.cs">
+      <DependentUpon>FmrAlterarUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Configuracao\FmrConfiguracaoCadastroFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +175,18 @@
     </Compile>
     <Compile Include="Configuracao\FmrConfiguracaoCadastroUsuario.Designer.cs">
       <DependentUpon>FmrConfiguracaoCadastroUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracao\FmrConfiguracaoPreCadastroFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracao\FmrConfiguracaoPreCadastroFuncionario.Designer.cs">
+      <DependentUpon>FmrConfiguracaoPreCadastroFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracao\FmrConfiguracaoPreCadastroUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracao\FmrConfiguracaoPreCadastroUsuario.Designer.cs">
+      <DependentUpon>FmrConfiguracaoPreCadastroUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Consultas\FmrConsulta Usuarios.cs">
       <SubType>Form</SubType>
@@ -245,6 +293,18 @@
     <EmbeddedResource Include="Ajuda\FmrAjudaSobre.resx">
       <DependentUpon>FmrAjudaSobre.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Alterar\FmrAlterarCategoria.resx">
+      <DependentUpon>FmrAlterarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Alterar\FmrAlterarColecao.resx">
+      <DependentUpon>FmrAlterarColecao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Alterar\FmrAlterarMidia.resx">
+      <DependentUpon>FmrAlterarMidia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Alterar\FmrAlterarOrigem.resx">
+      <DependentUpon>FmrAlterarOrigem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cadastros\Filtros\FmrFiltroCategoria.resx">
       <DependentUpon>FmrFiltroCategoria.cs</DependentUpon>
     </EmbeddedResource>
@@ -281,11 +341,23 @@
     <EmbeddedResource Include="Cadastros\FmrPreCadastroOrigem.resx">
       <DependentUpon>FmrPreCadastroOrigem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Configuracao\Alterar\FmrAlterarFuncionario.resx">
+      <DependentUpon>FmrAlterarFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracao\Alterar\FmrAlterarUsuario.resx">
+      <DependentUpon>FmrAlterarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Configuracao\FmrConfiguracaoCadastroFuncionario.resx">
       <DependentUpon>FmrConfiguracaoCadastroFuncionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Configuracao\FmrConfiguracaoCadastroUsuario.resx">
       <DependentUpon>FmrConfiguracaoCadastroUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracao\FmrConfiguracaoPreCadastroFuncionario.resx">
+      <DependentUpon>FmrConfiguracaoPreCadastroFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracao\FmrConfiguracaoPreCadastroUsuario.resx">
+      <DependentUpon>FmrConfiguracaoPreCadastroUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas\FmrConsulta Usuarios.resx">
       <DependentUpon>FmrConsulta Usuarios.cs</DependentUpon>

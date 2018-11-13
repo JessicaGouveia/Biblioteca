@@ -32,12 +32,12 @@ namespace SystemTeca
                 }
                 else
                 {
-                    MessageBox.Show("Login ou Senha inválido.");
+                    MessageBox.Show("Login ou Senha inválido." , "Erro de Login" , MessageBoxButtons.OK , MessageBoxIcon.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Informe o usuário e a senha.");
+                MessageBox.Show("Informe o usuário e a senha.", "Erro de Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
