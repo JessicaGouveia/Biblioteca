@@ -41,6 +41,13 @@ namespace SystemTeca.Controllers
                 commandType: CommandType.StoredProcedure).FirstOrDefault();
         }
 
+        //public DbResultadoAcao Inserir(OrigemModel origem)
+        //{
+        //    return Db.Dc.Connection.Query<DbResultadoAcao>("dbo.spInserirOrigem",
+        //        new { NomeOrigem = origem.NomeOrigem },
+        //        commandType: CommandType.StoredProcedure).FirstOrDefault();
+        //}
+
         public DbResultadoAcao Atualizar(OrigemModel origem)
         {
             return Db.Dc.Connection.Query<DbResultadoAcao>("dbo.spAtualizarOrigem",
