@@ -16,5 +16,7 @@ namespace SystemTeca.Models
         public int QtdEmprestada { get; set; }
         public int QtdDevolvida { get; set; }
         public string Observacao { get; set; }
+        public int IdOperadorEmprestimo { get; set; }
+        public int IdOperadorDevolucao { get; set; }
     }
 }
