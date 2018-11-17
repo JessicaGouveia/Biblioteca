@@ -7,7 +7,8 @@ namespace SystemTeca.Data
     public class DataContext : IDisposable
     {
         private static string ConnectionString =
-            "Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Biblioteca_2;Data Source=DESKTOP-KI2AEK2\\SQLEXPRESS";
+            "Data Source=DESKTOP-9CDCQIJ\\SQLEXPRESS;Initial Catalog=Biblioteca;Persist Security Info=True;User ID=aluno;Password=1234;MultipleActiveResultSets=True";
+
 
         public SqlConnection Connection { get; private set; }
 

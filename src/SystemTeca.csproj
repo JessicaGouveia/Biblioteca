@@ -231,7 +231,12 @@
       <DependentUpon>FmrConsultaLivrosPU.cs</DependentUpon>
     </Compile>
     <Compile Include="Controllers\CategoriaController.cs" />
+    <Compile Include="Controllers\ColecaoController.cs" />
+    <Compile Include="Controllers\EmprestimoController.cs" />
+    <Compile Include="Controllers\MidiaController.cs" />
     <Compile Include="Controllers\OrigemController.cs" />
+    <Compile Include="Controllers\PessoaController.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Data\DataContext.cs" />
     <Compile Include="Db.cs" />
     <Compile Include="Index\FmrDevolucao.cs">
@@ -271,7 +276,6 @@
       <DependentUpon>FormLoad.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\CategoriaModel.cs" />
-    <Compile Include="Models\ColecaoMidia.cs" />
     <Compile Include="Models\ColecaoModel.cs" />
     <Compile Include="Models\DbResultadoAcao.cs" />
     <Compile Include="Models\EmprestimoModel.cs" />

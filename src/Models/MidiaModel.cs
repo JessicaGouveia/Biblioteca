@@ -12,7 +12,7 @@ namespace SystemTeca.Models
         public int IdColecao { get; set; }
         public int IdCotegoria { get; set; }
         public int IdOrigem { get; set; }
-        public string NomeMdia { get; set; }
+        public string NomeMidia { get; set; }
         public int QuantidadeMidia  { get; set; }
         public string LetraAlfabeto { get; set; }
         public int Numero { get; set; }

@@ -242,3 +242,11 @@ C:\Users\aluno\Desktop\Git\Biblioteca\src\obj\Debug\SystemTeca.Configuracao.FmrC
 =======
 C:\Users\Jéssica\Documents\GitHub\Biblioteca\src\obj\Debug\SystemTeca.csprojAssemblyReference.cache
 >>>>>>> Stashed changes
+C:\Users\Jéssica\Documents\GitHub\Biblioteca\src\obj\Debug\SystemTeca.Cadastros.Alterar.FmrAlterarCategoria.resources
+C:\Users\Jéssica\Documents\GitHub\Biblioteca\src\obj\Debug\SystemTeca.Cadastros.Alterar.FmrAlterarColecao.resources
+C:\Users\Jéssica\Documents\GitHub\Biblioteca\src\obj\Debug\SystemTeca.Cadastros.Alterar.FmrAlterarMidia.resources
+C:\Users\Jéssica\Documents\GitHub\Biblioteca\src\obj\Debug\SystemTeca.Cadastros.Alterar.FmrAlterarOrigem.resources
+C:\Users\Jéssica\Documents\GitHub\Biblioteca\src\obj\Debug\SystemTeca.Configuracao.Alterar.FmrAlterarFuncionario.resources
+C:\Users\Jéssica\Documents\GitHub\Biblioteca\src\obj\Debug\SystemTeca.Configuracao.Alterar.FmrAlterarUsuario.resources
+C:\Users\Jéssica\Documents\GitHub\Biblioteca\src\obj\Debug\SystemTeca.Configuracao.FmrConfiguracaoPreCadastroFuncionario.resources
+C:\Users\Jéssica\Documents\GitHub\Biblioteca\src\obj\Debug\SystemTeca.Configuracao.FmrConfiguracaoPreCadastroUsuario.resources
