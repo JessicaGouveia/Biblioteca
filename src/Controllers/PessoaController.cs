@@ -65,6 +65,7 @@ namespace SystemTeca.Controllers
             return Db.Dc.Connection.Query<DbResultadoAcao>("dbo.spAtualizarPessoa",
                 new
                 {
+                    IdPessoa = pessoa.IdPessoa,
                     NomePessoa = pessoa.NomePessoa,
                     NumeroTelefone = pessoa.NumeroTelefone,
                     RG = pessoa.Rg,

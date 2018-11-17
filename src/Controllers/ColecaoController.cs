@@ -43,7 +43,9 @@ namespace SystemTeca.Controllers
                 new
                 {
                     NomeColecao = colecao.NomeColecao,
-                    AtivoColecao = colecao.AtivoColecao
+                    AtivoColecao = colecao.AtivoColecao,
+                    QuantidadeColecao = colecao.QuantidadeColecao,
+                    VolumeColecao = colecao.VolumeColecao
 
                 },
                 commandType: CommandType.StoredProcedure).FirstOrDefault();

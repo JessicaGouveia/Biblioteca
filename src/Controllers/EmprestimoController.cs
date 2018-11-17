@@ -15,23 +15,56 @@ namespace SystemTeca.Controllers
                 commandType: CommandType.StoredProcedure);
         }
 
-        public EmprestimoModel ConsultaPorId(int idEmprestimo, int idMidia, int idPessoa)
+        public EmprestimoModel ConsultaPorId(int idEmprestimo)
         {
             return Db.Dc.Connection.Query<EmprestimoModel>("dbo.spConsultaEmprestimo",
                 new
                 {
-                    IdEmprestimo = idEmprestimo,
-                    IdMidia = idMidia,
-                    IdPessoa = idPessoa
-                    
+                    IdEmprestimo = idEmprestimo
                 },
                 commandType: CommandType.StoredProcedure).FirstOrDefault();
         }
 
+        public IEnumerable<EmprestimoModel> ConsultaPorPessoa(int idPessoa)
+        {
+            return Db.Dc.Connection.Query<EmprestimoModel>("dbo.spConsultaEmprestimo",
+                new
+                {
+                    IdPessoa = idPessoa
+                },
+                commandType: CommandType.StoredProcedure);
+        }
+
+        public IEnumerable<EmprestimoModel> ConsultaPorMidia(int idMidia)
+        {
+            return Db.Dc.Connection.Query<EmprestimoModel>("dbo.spConsultaEmprestimo",
+                new
+                {
+                    IdMidia = idMidia
+                },
+                commandType: CommandType.StoredProcedure);
+        }
+
         public IEnumerable<EmprestimoModel> ConsultaPorNome(string nomeMidia, string nomePessoa)
         {
-            return Db.Dc.Connection.Query<EmprestimoModel>("dbo.spConsultaEmprestimo", new { NomeMidia = nomeMidia, NomePessoa = nomePessoa },
-                commandType: CommandType.StoredProcedure);
+            if (nomeMidia != null && nomePessoa != null)
+            {
+                return Db.Dc.Connection.Query<EmprestimoModel>("dbo.spConsultaEmprestimo",
+                    new {NomeMidia = nomeMidia, NomePessoa = nomePessoa},
+                    commandType: CommandType.StoredProcedure);
+            }else if (nomeMidia != null)
+            {
+                return Db.Dc.Connection.Query<EmprestimoModel>("dbo.spConsultaEmprestimo",
+                    new { NomeMidia = nomeMidia },
+                    commandType: CommandType.StoredProcedure);
+            }else if (nomePessoa != null)
+            {
+                return Db.Dc.Connection.Query<EmprestimoModel>("dbo.spConsultaEmprestimo",
+                    new { NomePessoa = nomePessoa },
+                    commandType: CommandType.StoredProcedure);
+            }
+
+            return null;
         }
 
 
@@ -46,7 +79,7 @@ namespace SystemTeca.Controllers
                     IdPessoa = emprestimo.IdPessoa,
                     QtdEmprestada = emprestimo.QtdEmprestada,
                     Observacao = emprestimo.Observacao,
-                    IdOperadorEmprestimo = emprestimo.IdOperadorEmprestimo
+                    IdOperadorEmprestimo = Usuario.LoginUsuario.IdPessoa
                 },
                 commandType: CommandType.StoredProcedure).FirstOrDefault();
         }
@@ -59,7 +92,7 @@ namespace SystemTeca.Controllers
                     IdEmprestimo = emprestimo.IdEmprestimo,
                     QuantidadeDevolvida = emprestimo.QtdDevolvida,
                     Observacao = emprestimo.Observacao,
-                    IdOperadorDevolucao = emprestimo.IdOperadorDevolucao
+                    IdOperadorDevolucao = Usuario.LoginUsuario.IdPessoa
                 },
                 commandType: CommandType.StoredProcedure).FirstOrDefault();
         }

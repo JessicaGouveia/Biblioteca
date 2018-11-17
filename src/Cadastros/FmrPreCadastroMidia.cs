@@ -31,7 +31,7 @@ namespace SystemTeca.Cadastros
             dataGridView1.Rows.Clear();
             foreach (var item in Midias)
             {
-                dataGridView1.Rows.Add(item.IdMidia.ToString(), item.NomeMidia, "Alterar");
+                dataGridView1.Rows.Add(item.IdMidia.ToString(), item.NomeMidia, ((item.AtivoMidia) ? "Sim" : "Não"), "Alterar");
             }
         }
 

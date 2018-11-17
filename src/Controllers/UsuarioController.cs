@@ -30,7 +30,7 @@ namespace SystemTeca.Controllers
 
         public IEnumerable<UsuarioModel> ConsultaPorNome(string loginUsuario)
         {
-            return Db.Dc.Connection.Query<UsuarioModel>("dbo.spConsultaUsuario", new { LoginUsuario= loginUsuario, UsuarioAtivo = 1 },
+            return Db.Dc.Connection.Query<UsuarioModel>("dbo.spConsultaUsuario", new { LoginUsuario = loginUsuario, UsuarioAtivo = 1 },
                 commandType: CommandType.StoredProcedure);
         }
 
