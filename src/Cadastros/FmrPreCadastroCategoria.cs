@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SystemTeca.Cadastros.Alterar;
 using SystemTeca.Controllers;
 using SystemTeca.Models;
 
@@ -40,7 +41,7 @@ namespace SystemTeca.Cadastros
         private void button1_Click(object sender, EventArgs e)
         {
             FmrCadastroCategoria FmrCadastro = new FmrCadastroCategoria();
-            FmrCadastro.Closed += new EventHandler(FmrCadastro_Closed);
+            FmrCadastro.Closed += new EventHandler(Fmr_Closed);
             FmrCadastro.Show();
         }
 
@@ -55,11 +56,13 @@ namespace SystemTeca.Cadastros
             {
                 int idCategoria = Int32.Parse(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
 
-                MessageBox.Show("Precisa abrir a tela para alterar a categoria "+ idCategoria.ToString());
+                FmrAlterarCategoria FmrAlterar = new FmrAlterarCategoria(idCategoria);
+                FmrAlterar.Closed += new EventHandler(Fmr_Closed);
+                FmrAlterar.Show();
             }
         }
 
-        void FmrCadastro_Closed(object sender, EventArgs e)
+        void Fmr_Closed(object sender, EventArgs e)
         {
             Categorias = categoriaController.ConsultaTodos();
             AtualizaDataGrid();
