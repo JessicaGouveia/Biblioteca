@@ -45,7 +45,7 @@ namespace SystemTeca.Controllers
                     NomeColecao = colecao.NomeColecao,
                     AtivoColecao = colecao.AtivoColecao,
                     QuantidadeColecao = colecao.QuantidadeColecao,
-                    VolumeColecao = colecao.VolumeColecao
+                    VolumeColecaoMidia = colecao.VolumeColecaoMidia
 
                 },
                 commandType: CommandType.StoredProcedure).FirstOrDefault();
@@ -59,9 +59,8 @@ namespace SystemTeca.Controllers
                     IdColecao = colecao.IdColecao,
                     NomeColecao = colecao.NomeColecao,
                     AtivoColecao = colecao.AtivoColecao,
-                    DeletadoColecao = colecao.DeletadoColecao,
                     QuantidadeColecao = colecao.QuantidadeColecao,
-                    VolumeColecao = colecao.VolumeColecao
+                    VolumeColecaoMidia = colecao.VolumeColecaoMidia
                 },
                 commandType: CommandType.StoredProcedure).FirstOrDefault();
         }

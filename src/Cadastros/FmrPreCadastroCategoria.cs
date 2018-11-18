@@ -16,7 +16,6 @@ namespace SystemTeca.Cadastros
     public partial class FmrPreCadastroCategoria : Form
     {
         private CategoriaController categoriaController;
-
         private IEnumerable<CategoriaModel> Categorias;
 
         public FmrPreCadastroCategoria()
