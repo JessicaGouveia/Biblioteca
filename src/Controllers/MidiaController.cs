@@ -71,12 +71,12 @@ public DbResultadoAcao Inserir(MidiaModel midia)
                 new
                 {
                     IdColecao = midia.IdColecao,
-                    IdCategoria = midia.IdCotegoria,
+                    IdCategoria = midia.IdCategoria,
                     IdOrigem = midia.IdOrigem,
                     NomeMidia = midia.NomeMidia ,
                     AtivoMidia = midia.AtivoMidia,
                     QuantidadeMidia = midia.QuantidadeMidia,
-                    LetraAlfabeto = midia.LetraAlfabeto,
+                    LetradoAlfabeto = midia.LetraAlfabeto,
                     Numero = midia.Numero
 
                 },
@@ -90,7 +90,7 @@ public DbResultadoAcao Inserir(MidiaModel midia)
                 {
                     IdMidia = midia.IdMidia,
                     IdColecao = midia.IdColecao,
-                    IdCategoria = midia.IdCotegoria,
+                    IdCategoria = midia.IdCategoria,
                     IdOrigem = midia.IdOrigem,
                     NomeMidia = midia.NomeMidia,
                     AtivoMidia = midia.AtivoMidia,
