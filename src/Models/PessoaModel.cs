@@ -21,5 +21,10 @@ namespace SystemTeca.Models
         public string Uf { get; set; }
         public bool AtivoPessoa { get; set; }
         public DateTime DataCriacao { get; set; }
+
+        public override string ToString()
+        {
+            return NomePessoa;
+        }
     }
 }

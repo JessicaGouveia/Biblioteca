@@ -54,7 +54,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.NomeLogin = new System.Windows.Forms.Label();
             this.BotaoEmprestimo = new System.Windows.Forms.Button();
-            this.BotaoDevolucao = new System.Windows.Forms.Button();
             this.PesquisaTxT = new System.Windows.Forms.TextBox();
             this.Sair = new System.Windows.Forms.Button();
             this.BotaoRelatorios = new System.Windows.Forms.Button();
@@ -68,6 +67,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BtnDevolucao = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Midia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Pessoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -315,17 +315,6 @@
             this.BotaoEmprestimo.UseVisualStyleBackColor = true;
             this.BotaoEmprestimo.Click += new System.EventHandler(this.button1_Click);
             // 
-            // BotaoDevolucao
-            // 
-            this.BotaoDevolucao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BotaoDevolucao.Location = new System.Drawing.Point(13, 302);
-            this.BotaoDevolucao.Name = "BotaoDevolucao";
-            this.BotaoDevolucao.Size = new System.Drawing.Size(142, 70);
-            this.BotaoDevolucao.TabIndex = 8;
-            this.BotaoDevolucao.Text = "Devolução de Material";
-            this.BotaoDevolucao.UseVisualStyleBackColor = true;
-            this.BotaoDevolucao.Click += new System.EventHandler(this.button2_Click);
-            // 
             // PesquisaTxT
             // 
             this.PesquisaTxT.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -348,7 +337,7 @@
             // BotaoRelatorios
             // 
             this.BotaoRelatorios.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BotaoRelatorios.Location = new System.Drawing.Point(13, 411);
+            this.BotaoRelatorios.Location = new System.Drawing.Point(13, 296);
             this.BotaoRelatorios.Name = "BotaoRelatorios";
             this.BotaoRelatorios.Size = new System.Drawing.Size(142, 70);
             this.BotaoRelatorios.TabIndex = 12;
@@ -373,6 +362,7 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.BtnDevolucao,
             this.Id,
             this.Midia,
             this.Pessoa,
@@ -385,6 +375,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(790, 263);
             this.dataGridView1.TabIndex = 17;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label5
             // 
@@ -477,6 +468,14 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // BtnDevolucao
+            // 
+            this.BtnDevolucao.HeaderText = "";
+            this.BtnDevolucao.Name = "BtnDevolucao";
+            this.BtnDevolucao.ReadOnly = true;
+            this.BtnDevolucao.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.BtnDevolucao.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
             // Id
             // 
             this.Id.HeaderText = "Id";
@@ -535,7 +534,6 @@
             this.Controls.Add(this.Sair);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.PesquisaTxT);
-            this.Controls.Add(this.BotaoDevolucao);
             this.Controls.Add(this.BotaoEmprestimo);
             this.Controls.Add(this.NomeLogin);
             this.Controls.Add(this.label1);
@@ -573,7 +571,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label NomeLogin;
         private System.Windows.Forms.Button BotaoEmprestimo;
-        private System.Windows.Forms.Button BotaoDevolucao;
         private System.Windows.Forms.TextBox PesquisaTxT;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button Sair;
@@ -600,6 +597,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem ajudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
+        private System.Windows.Forms.DataGridViewButtonColumn BtnDevolucao;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Midia;
         private System.Windows.Forms.DataGridViewTextBoxColumn Pessoa;

@@ -27,24 +27,24 @@ namespace SystemTeca.Controllers
                 commandType: CommandType.StoredProcedure).FirstOrDefault();
         }
 
-        public MidiaQuery ConsultaPorCategoria(int idCategoria)
+        public IEnumerable<MidiaQuery> ConsultaPorCategoria(int idCategoria)
         {
             return Db.Dc.Connection.Query<MidiaQuery>("dbo.spConsultaMidia",
                 new
                 {
                     IdCategoria = idCategoria
                 },
-                commandType: CommandType.StoredProcedure).FirstOrDefault();
+                commandType: CommandType.StoredProcedure);
         }
 
-        public MidiaQuery ConsultaPorColecao(int idColecao)
+        public IEnumerable<MidiaQuery> ConsultaPorColecao(int idColecao)
         {
             return Db.Dc.Connection.Query<MidiaQuery>("dbo.spConsultaMidia",
                 new
                 {
                     IdColecao = idColecao
                 },
-                commandType: CommandType.StoredProcedure).FirstOrDefault();
+                commandType: CommandType.StoredProcedure);
         }
 
 

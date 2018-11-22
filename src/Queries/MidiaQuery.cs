@@ -24,5 +24,10 @@ namespace SystemTeca.Queries
         public bool DeletadoMidia { get; set; }
         public bool DisponivelEmprestimo { get; set; }
         public int QtdDisponivelEmprestimo { get; set; }
+
+        public override string ToString()
+        {
+            return NomeMidia+" - "+LetradoAlfabeto+" "+Numero.ToString();
+        }
     }
 }

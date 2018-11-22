@@ -10,7 +10,7 @@ namespace SystemTeca
     public partial class FmrIndex : Form
     {
         private EmprestimoController emprestimoController;
-        private IEnumerable<EmprestimoQuery> emprestimoModel;
+        private IEnumerable<EmprestimoQuery> emprestimos;
 
         // Formularios de Consulta
         Consulta.FmrConsultaCD FmrConsultaCD = new Consulta.FmrConsultaCD();
@@ -27,12 +27,8 @@ namespace SystemTeca
             NomeLogin.Text = Usuario.LoginUsuario.NomePessoa;
 
             emprestimoController = new EmprestimoController();
-            emprestimoModel = emprestimoController.ConsultaTodosNaoDevolvido();
 
-            foreach (var item in emprestimoModel)
-            {
-                dataGridView1.Rows.Add(item.IdMidia.ToString(), item.NomeMidia, item.NomePessoa, item.QtdEmprestada, item.DataSaida.ToString(), item.Observacao, item.NomeOperadorEmprestimo);
-            }
+            AtualizaDataGrid();
         }
 
         private void Sair_Click(object sender, EventArgs e)
@@ -114,17 +110,11 @@ namespace SystemTeca
         private void button1_Click(object sender, EventArgs e)
         {
             // Emprestimo
-            FmrEmprestimo FmrEmprestimo = new FmrEmprestimo();
-            FmrEmprestimo.Show();
+            FmrEmprestimo fmrEmprestimo = new FmrEmprestimo();
+            fmrEmprestimo.Closed += new EventHandler(FmrClose);
+            fmrEmprestimo.Show();
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            // Devolução
-            FmrDevolucao FmrDevolucao = new FmrDevolucao();
-            FmrDevolucao.Show();
-        }
-
+        
         private void button4_Click(object sender, EventArgs e)
         {
             // Relatorios
@@ -160,6 +150,35 @@ namespace SystemTeca
         private void NomeLogin_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void FmrClose(object sender, EventArgs e)
+        {
+            AtualizaDataGrid();
+        }
+
+        private void AtualizaDataGrid()
+        {
+            emprestimos = emprestimoController.ConsultaTodosNaoDevolvido();
+
+            dataGridView1.Rows.Clear();
+
+            foreach (var item in emprestimos)
+            {
+                dataGridView1.Rows.Add("Devolução", item.IdEmprestimo.ToString(), item.NomeMidia, item.NomePessoa, item.QtdEmprestada, item.DataSaida.ToString(), item.Observacao, item.NomeOperadorEmprestimo);
+            }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 0)
+            {
+                int idEmprestimo = Int32.Parse(dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString());
+
+                FmrDevolucao fmrDevolucao = new FmrDevolucao(idEmprestimo);
+                fmrDevolucao.Closed += new EventHandler(FmrClose);
+                fmrDevolucao.Show();
+            }
         }
     }
 }
