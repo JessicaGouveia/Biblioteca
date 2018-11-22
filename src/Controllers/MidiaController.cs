@@ -3,23 +3,23 @@ using System.Data;
 using System.Linq;
 using SystemTeca.Models;
 using Dapper;
+using SystemTeca.Queries;
 
 namespace SystemTeca.Controllers
 {
     public class MidiaController
     {
 
-
         #region Select
-        public IEnumerable<MidiaModel> ConsultaTodos()
+        public IEnumerable<MidiaQuery> ConsultaTodos()
         {
-            return Db.Dc.Connection.Query<MidiaModel>("dbo.spConsultaMidia",
+            return Db.Dc.Connection.Query<MidiaQuery>("dbo.spConsultaMidia",
                 commandType: CommandType.StoredProcedure);
         }
 
-        public MidiaModel ConsultaPorId(int idMidia)
+        public MidiaQuery ConsultaPorId(int idMidia)
         {
-            return Db.Dc.Connection.Query<MidiaModel>("dbo.spConsultaMidia", 
+            return Db.Dc.Connection.Query<MidiaQuery>("dbo.spConsultaMidia", 
                 new
                 {
                     IdMidia = idMidia
@@ -27,9 +27,9 @@ namespace SystemTeca.Controllers
                 commandType: CommandType.StoredProcedure).FirstOrDefault();
         }
 
-        public MidiaModel ConsultaPorCategoria(int idCategoria)
+        public MidiaQuery ConsultaPorCategoria(int idCategoria)
         {
-            return Db.Dc.Connection.Query<MidiaModel>("dbo.spConsultaMidia",
+            return Db.Dc.Connection.Query<MidiaQuery>("dbo.spConsultaMidia",
                 new
                 {
                     IdCategoria = idCategoria
@@ -37,9 +37,9 @@ namespace SystemTeca.Controllers
                 commandType: CommandType.StoredProcedure).FirstOrDefault();
         }
 
-        public MidiaModel ConsultaPorColecao(int idColecao)
+        public MidiaQuery ConsultaPorColecao(int idColecao)
         {
-            return Db.Dc.Connection.Query<MidiaModel>("dbo.spConsultaMidia",
+            return Db.Dc.Connection.Query<MidiaQuery>("dbo.spConsultaMidia",
                 new
                 {
                     IdColecao = idColecao
@@ -48,22 +48,19 @@ namespace SystemTeca.Controllers
         }
 
 
-        public IEnumerable<MidiaModel> ConsultaTodosAtivos()
+        public IEnumerable<MidiaQuery> ConsultaTodosAtivos()
         {
-            return Db.Dc.Connection.Query<MidiaModel>("dbo.spConsultaMidia", new { AtivoMidia = 1 },
+            return Db.Dc.Connection.Query<MidiaQuery>("dbo.spConsultaMidia", new { AtivoMidia = 1 },
                 commandType: CommandType.StoredProcedure);
         }
 
-        public IEnumerable<MidiaModel> ConsultaPorNome(string nomeMidia)
+        public IEnumerable<MidiaQuery> ConsultaPorNome(string nomeMidia)
         {
-            return Db.Dc.Connection.Query<MidiaModel>("dbo.spConsultaMidia", new { NomeMidia = nomeMidia, AtivoMidia = 1 },
+            return Db.Dc.Connection.Query<MidiaQuery>("dbo.spConsultaMidia", new { NomeMidia = nomeMidia, AtivoMidia = 1 },
                 commandType: CommandType.StoredProcedure);
         }
 
-        
-
-
-#endregion
+        #endregion
 
 public DbResultadoAcao Inserir(MidiaModel midia)
         {
@@ -95,7 +92,7 @@ public DbResultadoAcao Inserir(MidiaModel midia)
                     NomeMidia = midia.NomeMidia,
                     AtivoMidia = midia.AtivoMidia,
                     QuantidadeMidia = midia.QuantidadeMidia,
-                    LetraAlfabeto = midia.LetraAlfabeto,
+                    LetradoAlfabeto = midia.LetraAlfabeto,
                     Numero = midia.Numero
                 },
                 commandType: CommandType.StoredProcedure).FirstOrDefault();

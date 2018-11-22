@@ -1,10 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
+using SystemTeca.Controllers;
+using SystemTeca.Models;
+using SystemTeca.Queries;
 
 namespace SystemTeca
 {
     public partial class FmrIndex : Form
     {
+        private EmprestimoController emprestimoController;
+        private IEnumerable<EmprestimoQuery> emprestimoModel;
 
         // Formularios de Consulta
         Consulta.FmrConsultaCD FmrConsultaCD = new Consulta.FmrConsultaCD();
@@ -19,6 +25,14 @@ namespace SystemTeca
         {
             InitializeComponent();
             NomeLogin.Text = Usuario.LoginUsuario.NomePessoa;
+
+            emprestimoController = new EmprestimoController();
+            emprestimoModel = emprestimoController.ConsultaTodosNaoDevolvido();
+
+            foreach (var item in emprestimoModel)
+            {
+                dataGridView1.Rows.Add(item.IdMidia.ToString(), item.NomeMidia, item.NomePessoa, item.QtdEmprestada, item.DataSaida.ToString(), item.Observacao, item.NomeOperadorEmprestimo);
+            }
         }
 
         private void Sair_Click(object sender, EventArgs e)

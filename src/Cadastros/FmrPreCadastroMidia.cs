@@ -1,21 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using SystemTeca.Cadastros.Alterar;
 using SystemTeca.Controllers;
-using SystemTeca.Models;
+using SystemTeca.Queries;
 
 namespace SystemTeca.Cadastros
 {
     public partial class FmrPreCadastroMidia : Form
     {
         private MidiaController midiaController;
-        private IEnumerable<MidiaModel> Midias;
+        private IEnumerable<MidiaQuery> Midias;
 
         public FmrPreCadastroMidia()
         {
@@ -31,7 +26,7 @@ namespace SystemTeca.Cadastros
             dataGridView1.Rows.Clear();
             foreach (var item in Midias)
             {
-                dataGridView1.Rows.Add(item.IdMidia.ToString(), item.NomeMidia, ((item.AtivoMidia) ? "Sim" : "Não"), "Alterar");
+                dataGridView1.Rows.Add(item.IdMidia.ToString(), item.NomeMidia, item.NomeCategoria, item.QuantidadeMidia, item.NomeOrigem, item.LetradoAlfabeto, item.Numero, item.NomeColecao, ((item.AtivoMidia) ? "Sim" : "Não"), "Alterar");
             }
         }
 
@@ -40,7 +35,7 @@ namespace SystemTeca.Cadastros
             this.Dispose();
         }
 
-        void FmrCadastro_Closed(object sender, EventArgs e)
+        void Fmr_Closed(object sender, EventArgs e)
         {
             Midias = midiaController.ConsultaTodos();
             AtualizaDataGrid();
@@ -49,7 +44,8 @@ namespace SystemTeca.Cadastros
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Cadastros.FmrCadastroMidia FmrCadastroMidia = new Cadastros.FmrCadastroMidia();
+            FmrCadastroMidia FmrCadastroMidia = new FmrCadastroMidia();
+            FmrCadastroMidia.Closed += new EventHandler(Fmr_Closed);
             FmrCadastroMidia.Show();
         }
 
@@ -73,11 +69,12 @@ namespace SystemTeca.Cadastros
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == 3)
+            if (e.ColumnIndex == 9)
             {
                 int idMidia = Int32.Parse(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
-
-                MessageBox.Show("Precisa abrir a tela para alterar a origem " + idMidia.ToString());
+                FmrAlterarMidia FmrAlterarMidia = new FmrAlterarMidia(idMidia);
+                FmrAlterarMidia.Closed += new EventHandler(Fmr_Closed);
+                FmrAlterarMidia.Show();
             }
         }
     }

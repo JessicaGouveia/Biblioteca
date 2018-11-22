@@ -44,20 +44,20 @@
             this.Check_Possui_Colecao = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.NumeroNumeric = new System.Windows.Forms.NumericUpDown();
+            this.label2 = new System.Windows.Forms.Label();
+            this.LetraComboBox = new System.Windows.Forms.ComboBox();
+            this.QuantidadeNumeric = new System.Windows.Forms.NumericUpDown();
             this.Origem_ComboBox = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.QuantidadeNumeric = new System.Windows.Forms.NumericUpDown();
-            this.LetraComboBox = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.NumeroNumeric = new System.Windows.Forms.NumericUpDown();
-            this.label10 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.QuantidadeNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumeroNumeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QuantidadeNumeric)).BeginInit();
             this.SuspendLayout();
             // 
             // Categoria_ComboBox
@@ -104,7 +104,7 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(309, 496);
+            this.button4.Location = new System.Drawing.Point(306, 496);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(119, 71);
             this.button4.TabIndex = 7;
@@ -230,6 +230,116 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Daddos da Mídia";
             // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Sim",
+            "Não"});
+            this.comboBox2.Location = new System.Drawing.Point(104, 198);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 24);
+            this.comboBox2.TabIndex = 43;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(55, 201);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(44, 17);
+            this.label10.TabIndex = 42;
+            this.label10.Text = "Ativo";
+            // 
+            // NumeroNumeric
+            // 
+            this.NumeroNumeric.Location = new System.Drawing.Point(105, 169);
+            this.NumeroNumeric.Maximum = new decimal(new int[] {
+            9999999,
+            0,
+            0,
+            0});
+            this.NumeroNumeric.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.NumeroNumeric.Name = "NumeroNumeric";
+            this.NumeroNumeric.Size = new System.Drawing.Size(120, 23);
+            this.NumeroNumeric.TabIndex = 41;
+            this.NumeroNumeric.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(35, 171);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(64, 17);
+            this.label2.TabIndex = 40;
+            this.label2.Text = "Número";
+            // 
+            // LetraComboBox
+            // 
+            this.LetraComboBox.FormattingEnabled = true;
+            this.LetraComboBox.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z"});
+            this.LetraComboBox.Location = new System.Drawing.Point(104, 139);
+            this.LetraComboBox.Name = "LetraComboBox";
+            this.LetraComboBox.Size = new System.Drawing.Size(121, 24);
+            this.LetraComboBox.TabIndex = 39;
+            this.LetraComboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // QuantidadeNumeric
+            // 
+            this.QuantidadeNumeric.Location = new System.Drawing.Point(105, 110);
+            this.QuantidadeNumeric.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.QuantidadeNumeric.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.QuantidadeNumeric.Name = "QuantidadeNumeric";
+            this.QuantidadeNumeric.Size = new System.Drawing.Size(120, 23);
+            this.QuantidadeNumeric.TabIndex = 38;
+            this.QuantidadeNumeric.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // Origem_ComboBox
             // 
             this.Origem_ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -261,120 +371,11 @@
             this.label8.TabIndex = 25;
             this.label8.Text = "Quantidade";
             // 
-            // QuantidadeNumeric
-            // 
-            this.QuantidadeNumeric.Location = new System.Drawing.Point(105, 110);
-            this.QuantidadeNumeric.Maximum = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
-            this.QuantidadeNumeric.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.QuantidadeNumeric.Name = "QuantidadeNumeric";
-            this.QuantidadeNumeric.Size = new System.Drawing.Size(120, 23);
-            this.QuantidadeNumeric.TabIndex = 38;
-            this.QuantidadeNumeric.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // LetraComboBox
-            // 
-            this.LetraComboBox.FormattingEnabled = true;
-            this.LetraComboBox.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F",
-            "G",
-            "H",
-            "I",
-            "J",
-            "K",
-            "L",
-            "M",
-            "N",
-            "O",
-            "P",
-            "Q",
-            "R",
-            "S",
-            "T",
-            "U",
-            "V",
-            "X",
-            "Y",
-            "Z"});
-            this.LetraComboBox.Location = new System.Drawing.Point(104, 139);
-            this.LetraComboBox.Name = "LetraComboBox";
-            this.LetraComboBox.Size = new System.Drawing.Size(121, 24);
-            this.LetraComboBox.TabIndex = 39;
-            this.LetraComboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(35, 171);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 17);
-            this.label2.TabIndex = 40;
-            this.label2.Text = "Número";
-            // 
-            // NumeroNumeric
-            // 
-            this.NumeroNumeric.Location = new System.Drawing.Point(105, 169);
-            this.NumeroNumeric.Maximum = new decimal(new int[] {
-            9999999,
-            0,
-            0,
-            0});
-            this.NumeroNumeric.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.NumeroNumeric.Name = "NumeroNumeric";
-            this.NumeroNumeric.Size = new System.Drawing.Size(120, 23);
-            this.NumeroNumeric.TabIndex = 41;
-            this.NumeroNumeric.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(55, 201);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(44, 17);
-            this.label10.TabIndex = 42;
-            this.label10.Text = "Ativo";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Sim",
-            "Não"});
-            this.comboBox2.Location = new System.Drawing.Point(104, 198);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 24);
-            this.comboBox2.TabIndex = 43;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
-            // 
             // FmrCadastroMidia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(561, 583);
+            this.ClientSize = new System.Drawing.Size(561, 572);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Categoria_ComboBox);
             this.Controls.Add(this.pictureBox1);
@@ -393,8 +394,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.QuantidadeNumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumeroNumeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QuantidadeNumeric)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

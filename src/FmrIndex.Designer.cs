@@ -68,6 +68,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Midia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Pessoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quatidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Saida = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Observacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Operador = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             this.PainelDevoluçãoPendente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -365,6 +372,14 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
+            this.Midia,
+            this.Pessoa,
+            this.Quatidade,
+            this.Saida,
+            this.Observacao,
+            this.Operador});
             this.dataGridView1.Location = new System.Drawing.Point(0, 20);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -462,6 +477,50 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // Id
+            // 
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            // 
+            // Midia
+            // 
+            this.Midia.HeaderText = "Midia Emprestada";
+            this.Midia.Name = "Midia";
+            this.Midia.ReadOnly = true;
+            this.Midia.Width = 150;
+            // 
+            // Pessoa
+            // 
+            this.Pessoa.HeaderText = "Emprestado Para";
+            this.Pessoa.Name = "Pessoa";
+            this.Pessoa.ReadOnly = true;
+            this.Pessoa.Width = 150;
+            // 
+            // Quatidade
+            // 
+            this.Quatidade.HeaderText = "Quatidade Emprestada";
+            this.Quatidade.Name = "Quatidade";
+            this.Quatidade.ReadOnly = true;
+            // 
+            // Saida
+            // 
+            this.Saida.HeaderText = "Data Saida";
+            this.Saida.Name = "Saida";
+            this.Saida.ReadOnly = true;
+            // 
+            // Observacao
+            // 
+            this.Observacao.HeaderText = "Observação";
+            this.Observacao.Name = "Observacao";
+            this.Observacao.ReadOnly = true;
+            // 
+            // Operador
+            // 
+            this.Operador.HeaderText = "Operador";
+            this.Operador.Name = "Operador";
+            this.Operador.ReadOnly = true;
+            // 
             // FmrIndex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -541,5 +600,12 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem ajudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Midia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Pessoa;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quatidade;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Saida;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Observacao;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Operador;
     }
 }

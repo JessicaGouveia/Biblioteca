@@ -39,6 +39,12 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Origem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Letra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Coleção = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ativo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Alterar = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -48,7 +54,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(448, 494);
+            this.button2.Location = new System.Drawing.Point(955, 488);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(101, 26);
             this.button2.TabIndex = 21;
@@ -62,11 +68,17 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
             this.Nome,
+            this.Categoria,
+            this.Quantidade,
+            this.Origem,
+            this.Letra,
+            this.Numero,
+            this.Coleção,
             this.Ativo,
             this.Alterar});
             this.dataGridView1.Location = new System.Drawing.Point(12, 242);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(536, 241);
+            this.dataGridView1.Size = new System.Drawing.Size(1044, 241);
             this.dataGridView1.TabIndex = 20;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -107,7 +119,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(12, 142);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(536, 37);
+            this.button1.Size = new System.Drawing.Size(1044, 37);
             this.button1.TabIndex = 16;
             this.button1.Text = "Nova Mídia";
             this.button1.UseVisualStyleBackColor = false;
@@ -118,7 +130,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(377, 65);
+            this.label1.Location = new System.Drawing.Point(629, 64);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 51);
             this.label1.TabIndex = 15;
@@ -130,7 +142,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(560, 127);
+            this.pictureBox1.Size = new System.Drawing.Size(1056, 127);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
@@ -144,6 +156,42 @@
             // 
             this.Nome.HeaderText = "Nome";
             this.Nome.Name = "Nome";
+            // 
+            // Categoria
+            // 
+            this.Categoria.HeaderText = "Categoria";
+            this.Categoria.Name = "Categoria";
+            this.Categoria.ReadOnly = true;
+            // 
+            // Quantidade
+            // 
+            this.Quantidade.HeaderText = "Quantidade";
+            this.Quantidade.Name = "Quantidade";
+            this.Quantidade.ReadOnly = true;
+            // 
+            // Origem
+            // 
+            this.Origem.HeaderText = "Origem";
+            this.Origem.Name = "Origem";
+            this.Origem.ReadOnly = true;
+            // 
+            // Letra
+            // 
+            this.Letra.HeaderText = "Letra";
+            this.Letra.Name = "Letra";
+            this.Letra.ReadOnly = true;
+            // 
+            // Numero
+            // 
+            this.Numero.HeaderText = "Numero";
+            this.Numero.Name = "Numero";
+            this.Numero.ReadOnly = true;
+            // 
+            // Coleção
+            // 
+            this.Coleção.HeaderText = "Coleção";
+            this.Coleção.Name = "Coleção";
+            this.Coleção.ReadOnly = true;
             // 
             // Ativo
             // 
@@ -159,7 +207,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(561, 526);
+            this.ClientSize = new System.Drawing.Size(1068, 526);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button3);
@@ -189,6 +237,12 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Categoria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantidade;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Origem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Letra;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Numero;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Coleção;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ativo;
         private System.Windows.Forms.DataGridViewButtonColumn Alterar;
     }
