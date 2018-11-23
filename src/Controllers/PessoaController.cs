@@ -3,6 +3,7 @@ using System.Data;
 using System.Linq;
 using SystemTeca.Models;
 using Dapper;
+using System;
 
 namespace SystemTeca.Controllers
 {
@@ -58,6 +59,11 @@ namespace SystemTeca.Controllers
                     AtivoPessoa = pessoa.AtivoPessoa
                 },
                 commandType: CommandType.StoredProcedure).FirstOrDefault();
+        }
+
+        internal object Inserir(object categoria)
+        {
+            throw new NotImplementedException();
         }
 
         public DbResultadoAcao Atualizar(PessoaModel pessoa)

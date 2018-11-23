@@ -1,5 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+<<<<<<< HEAD
+=======
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+>>>>>>> master
 using System.Windows.Forms;
 using SystemTeca.Controllers;
 using SystemTeca.Models;
@@ -21,14 +30,26 @@ namespace SystemTeca
         Consulta.FmrConsultaLivrosPU FmrConsultaLivrosPU = new Consulta.FmrConsultaLivrosPU();
         Consulta.FmrConsulta_Usuarios FmrConsulta_Usuarios = new Consulta.FmrConsulta_Usuarios();
 
+        public string Valor = "" ;
+
         public FmrIndex()
         {
             InitializeComponent();
+<<<<<<< HEAD
             NomeLogin.Text = Usuario.LoginUsuario.NomePessoa;
 
             emprestimoController = new EmprestimoController();
 
             AtualizaDataGrid();
+=======
+        }
+
+        public FmrIndex( string Valor )
+        {
+            InitializeComponent();
+            NomeLogin.Text = Valor;
+            this.Valor = Valor;
+>>>>>>> master
         }
 
         private void Sair_Click(object sender, EventArgs e)
@@ -146,6 +167,7 @@ namespace SystemTeca
 
             FmrAjuda.Show();
         }
+<<<<<<< HEAD
 
         private void NomeLogin_Click(object sender, EventArgs e)
         {
@@ -180,5 +202,7 @@ namespace SystemTeca
                 fmrDevolucao.Show();
             }
         }
+=======
+>>>>>>> master
     }
 }
