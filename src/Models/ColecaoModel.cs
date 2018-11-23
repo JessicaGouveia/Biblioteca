@@ -11,8 +11,8 @@ namespace SystemTeca.Models
         public int IdColecao { get; set; }
         public string NomeColecao { get; set; }
         public int QuantidadeColecao { get; set; }
-        public string VolumeColecao { get; set; }
-        public bool AtivoColecao { get; set; }
+        public string VolumeColecaoMidia { get; set; }
+        public bool? AtivoColecao { get; set; }
         public bool DeletadoColecao { get; set; }
         public DateTime DataCriacao { get; set; }
 

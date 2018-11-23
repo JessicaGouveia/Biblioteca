@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SystemTeca.Cadastros.Alterar;
 using SystemTeca.Controllers;
 using SystemTeca.Models;
 
@@ -42,26 +43,26 @@ namespace SystemTeca.Cadastros
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Cadastros.FmrCadastroOrigem FmrCadastroOrigem = new Cadastros.FmrCadastroOrigem();
-            FmrCadastroOrigem.Closed += new EventHandler(FmrCadastro_Closed);
+            FmrCadastroOrigem FmrCadastroOrigem = new FmrCadastroOrigem();
+            FmrCadastroOrigem.Closed += new EventHandler(Fmr_Closed);
             FmrCadastroOrigem.Show();
-        }
-
-        void FmrCadastro_Closed(object sender, EventArgs e)
-        {
-            Origens = origemController.ConsultaTodos();
-            AtualizaDataGrid();
-
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex == 2)
             {
-                int idCategoria = Int32.Parse(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
-
-                MessageBox.Show("Precisa abrir a tela para alterar a origem " + idCategoria.ToString());
+                int idOrigem = Int32.Parse(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
+                FmrAlterarOrigem FmrAlterar = new FmrAlterarOrigem(idOrigem);
+                FmrAlterar.Closed += new EventHandler(Fmr_Closed);
+                FmrAlterar.Show();
             }
+        }
+
+        void Fmr_Closed(object sender, EventArgs e)
+        {
+            Origens = origemController.ConsultaTodos();
+            AtualizaDataGrid();
         }
 
         private void Filtrar_Button_Click(object sender, EventArgs e)

@@ -2,9 +2,9 @@
 {
     public class CategoriaModel
     {
-        public int? IdCategoria { get; set; }
+        public int IdCategoria { get; set; }
         public string NomeCategoria { get; set; }
         public bool? AtivoCategoria { get; set; }
-        public bool? DeletadoCategoria { get; set; }
+        public bool DeletadoCategoria { get; set; }
     }
 }
