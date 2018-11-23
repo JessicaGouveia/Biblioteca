@@ -19,7 +19,7 @@ namespace SystemTeca.Models
         public string Bairro { get; set; }
         public string Cidade { get; set; }
         public string Uf { get; set; }
-        public bool AtivoPessoa { get; set; }
+        public bool? AtivoPessoa { get; set; }
         public DateTime DataCriacao { get; set; }
     }
 }

@@ -30,14 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FmrConfiguracaoPreCadastroFuncionario));
             this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DataGrid = new System.Windows.Forms.DataGridView();
             this.Filtrar_Button = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Pesquisa_txt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ativo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewButtonColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,13 +56,19 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // dataGridView1
+            // DataGrid
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(11, 242);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(536, 241);
-            this.dataGridView1.TabIndex = 36;
+            this.DataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id,
+            this.Nome,
+            this.Ativo,
+            this.Column2});
+            this.DataGrid.Location = new System.Drawing.Point(11, 242);
+            this.DataGrid.Name = "DataGrid";
+            this.DataGrid.Size = new System.Drawing.Size(536, 241);
+            this.DataGrid.TabIndex = 36;
+            this.DataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGrid_CellContentClick_1);
             // 
             // Filtrar_Button
             // 
@@ -71,14 +81,15 @@
             this.Filtrar_Button.TabIndex = 35;
             this.Filtrar_Button.Text = "Filtrar";
             this.Filtrar_Button.UseVisualStyleBackColor = true;
+            this.Filtrar_Button.Click += new System.EventHandler(this.Filtrar_Button_Click);
             // 
-            // textBox1
+            // Pesquisa_txt
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(183, 196);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(225, 26);
-            this.textBox1.TabIndex = 34;
+            this.Pesquisa_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pesquisa_txt.Location = new System.Drawing.Point(183, 196);
+            this.Pesquisa_txt.Name = "Pesquisa_txt";
+            this.Pesquisa_txt.Size = new System.Drawing.Size(225, 26);
+            this.Pesquisa_txt.TabIndex = 34;
             // 
             // label2
             // 
@@ -123,15 +134,38 @@
             this.pictureBox1.TabIndex = 30;
             this.pictureBox1.TabStop = false;
             // 
+            // id
+            // 
+            this.id.HeaderText = "ID";
+            this.id.Name = "id";
+            this.id.Width = 50;
+            // 
+            // Nome
+            // 
+            this.Nome.HeaderText = "Nome";
+            this.Nome.MinimumWidth = 10;
+            this.Nome.Name = "Nome";
+            this.Nome.Width = 243;
+            // 
+            // Ativo
+            // 
+            this.Ativo.HeaderText = "Ativo";
+            this.Ativo.Name = "Ativo";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "";
+            this.Column2.Name = "Column2";
+            // 
             // FmrConfiguracaoPreCadastroFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(559, 524);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DataGrid);
             this.Controls.Add(this.Filtrar_Button);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Pesquisa_txt);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -140,7 +174,7 @@
             this.Name = "FmrConfiguracaoPreCadastroFuncionario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SystemOteca - Funcionario";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -150,12 +184,16 @@
         #endregion
 
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DataGrid;
         private System.Windows.Forms.Button Filtrar_Button;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Pesquisa_txt;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ativo;
+        private System.Windows.Forms.DataGridViewButtonColumn Column2;
     }
 }

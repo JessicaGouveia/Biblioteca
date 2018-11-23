@@ -1,20 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using SystemTeca.Controllers;
+using SystemTeca.Models;
 
 namespace SystemTeca.Configuracao
 {
     public partial class FmrConfiguracaoCadastroUsuario : Form
     {
+
+        private UsuarioController usuarioController;
+
+        private UsuarioModel User;
+
         public FmrConfiguracaoCadastroUsuario()
         {
             InitializeComponent();
+
+            usuarioController = new UsuarioController();
+            User = new UsuarioModel();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -34,12 +38,13 @@ namespace SystemTeca.Configuracao
 
         private void button4_Click(object sender, EventArgs e)
         {
-            string Nome = NomeTxT.Text;
-            string Login = LoginTxT.Text;
-            string Senha = SenhaTxT.Text;
+            if(NomeTxT.Text != "" && LoginTxT.Text != "" && SenhaTxT.Text != "")
+            {
+                User.UsuarioAtivo = true;
+                User.LoginUsuario = LoginTxT.Text;
+                User.SenhaUsuario = SenhaTxT.Text;
 
-            // Função de Cadastro no Banco
-
+            }
         }
     }
 }
