@@ -293,6 +293,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Queries\EmprestimoQuery.cs" />
+    <Compile Include="Queries\MidiaQuery.cs" />
     <Compile Include="Usuario.cs" />
     <EmbeddedResource Include="Ajuda\FmrAjudaSobre.resx">
       <DependentUpon>FmrAjudaSobre.cs</DependentUpon>

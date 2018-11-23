@@ -10,5 +10,10 @@ namespace SystemTeca.Models
     {
         public int IdOrigem { get; set; }
         public string NomeOrigem { get; set; }
+
+        public override string ToString()
+        {
+            return NomeOrigem;
+        }
     }
 }

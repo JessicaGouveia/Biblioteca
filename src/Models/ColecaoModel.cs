@@ -16,5 +16,10 @@ namespace SystemTeca.Models
         public bool DeletadoColecao { get; set; }
         public DateTime DataCriacao { get; set; }
 
+
+        public override string ToString()
+        {
+            return NomeColecao;
+        }
     }
 }

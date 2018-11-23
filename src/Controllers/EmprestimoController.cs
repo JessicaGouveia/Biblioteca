@@ -2,6 +2,7 @@
 using System.Data;
 using System.Linq;
 using SystemTeca.Models;
+using SystemTeca.Queries;
 using Dapper;
 
 namespace SystemTeca.Controllers
@@ -9,15 +10,22 @@ namespace SystemTeca.Controllers
     public class EmprestimoController
     {
         #region Select
-        public IEnumerable<EmprestimoModel> ConsultaTodos()
+        public IEnumerable<EmprestimoQuery> ConsultaTodos()
         {
-            return Db.Dc.Connection.Query<EmprestimoModel>("dbo.spConsultaEmprestimo",
+            return Db.Dc.Connection.Query<EmprestimoQuery>("dbo.spConsultaEmprestimo",
                 commandType: CommandType.StoredProcedure);
         }
 
-        public EmprestimoModel ConsultaPorId(int idEmprestimo)
+        public IEnumerable<EmprestimoQuery> ConsultaTodosNaoDevolvido()
         {
-            return Db.Dc.Connection.Query<EmprestimoModel>("dbo.spConsultaEmprestimo",
+            return Db.Dc.Connection.Query<EmprestimoQuery>("dbo.spConsultaEmprestimo",
+                new { Devolvido = false },
+                commandType: CommandType.StoredProcedure);
+        }
+
+        public EmprestimoQuery ConsultaPorId(int idEmprestimo)
+        {
+            return Db.Dc.Connection.Query<EmprestimoQuery>("dbo.spConsultaEmprestimo",
                 new
                 {
                     IdEmprestimo = idEmprestimo
@@ -25,9 +33,9 @@ namespace SystemTeca.Controllers
                 commandType: CommandType.StoredProcedure).FirstOrDefault();
         }
 
-        public IEnumerable<EmprestimoModel> ConsultaPorPessoa(int idPessoa)
+        public IEnumerable<EmprestimoQuery> ConsultaPorPessoa(int idPessoa)
         {
-            return Db.Dc.Connection.Query<EmprestimoModel>("dbo.spConsultaEmprestimo",
+            return Db.Dc.Connection.Query<EmprestimoQuery>("dbo.spConsultaEmprestimo",
                 new
                 {
                     IdPessoa = idPessoa
@@ -35,9 +43,9 @@ namespace SystemTeca.Controllers
                 commandType: CommandType.StoredProcedure);
         }
 
-        public IEnumerable<EmprestimoModel> ConsultaPorMidia(int idMidia)
+        public IEnumerable<EmprestimoQuery> ConsultaPorMidia(int idMidia)
         {
-            return Db.Dc.Connection.Query<EmprestimoModel>("dbo.spConsultaEmprestimo",
+            return Db.Dc.Connection.Query<EmprestimoQuery>("dbo.spConsultaEmprestimo",
                 new
                 {
                     IdMidia = idMidia
@@ -45,29 +53,27 @@ namespace SystemTeca.Controllers
                 commandType: CommandType.StoredProcedure);
         }
 
-        public IEnumerable<EmprestimoModel> ConsultaPorNome(string nomeMidia, string nomePessoa)
+        public IEnumerable<EmprestimoQuery> ConsultaPorNome(string nomeMidia, string nomePessoa)
         {
             if (nomeMidia != null && nomePessoa != null)
             {
-                return Db.Dc.Connection.Query<EmprestimoModel>("dbo.spConsultaEmprestimo",
+                return Db.Dc.Connection.Query<EmprestimoQuery>("dbo.spConsultaEmprestimo",
                     new {NomeMidia = nomeMidia, NomePessoa = nomePessoa},
                     commandType: CommandType.StoredProcedure);
             }else if (nomeMidia != null)
             {
-                return Db.Dc.Connection.Query<EmprestimoModel>("dbo.spConsultaEmprestimo",
+                return Db.Dc.Connection.Query<EmprestimoQuery>("dbo.spConsultaEmprestimo",
                     new { NomeMidia = nomeMidia },
                     commandType: CommandType.StoredProcedure);
             }else if (nomePessoa != null)
             {
-                return Db.Dc.Connection.Query<EmprestimoModel>("dbo.spConsultaEmprestimo",
+                return Db.Dc.Connection.Query<EmprestimoQuery>("dbo.spConsultaEmprestimo",
                     new { NomePessoa = nomePessoa },
                     commandType: CommandType.StoredProcedure);
             }
 
             return null;
         }
-
-
         #endregion
 
         public DbResultadoAcao InserirEmprestimo(EmprestimoModel emprestimo)
