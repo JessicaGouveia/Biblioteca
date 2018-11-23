@@ -59,6 +59,7 @@ namespace SystemTeca.Cadastros
                 FmrAlterarCategoria FmrAlterar = new FmrAlterarCategoria(idCategoria);
                 FmrAlterar.Closed += new EventHandler(Fmr_Closed);
                 FmrAlterar.Show();
+                //MessageBox.Show("Precisa abrir a tela para alterar a categoria "+ idCategoria.ToString());
             }
         }
 

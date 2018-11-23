@@ -38,7 +38,7 @@
             this.NomeTxT = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.CadastroBT = new System.Windows.Forms.Button();
             this.LoginTxT = new System.Windows.Forms.TextBox();
             this.SenhaTxT = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -77,7 +77,7 @@
             this.tabPage1.Controls.Add(this.NomeTxT);
             this.tabPage1.Controls.Add(this.button3);
             this.tabPage1.Controls.Add(this.label8);
-            this.tabPage1.Controls.Add(this.button4);
+            this.tabPage1.Controls.Add(this.CadastroBT);
             this.tabPage1.Controls.Add(this.LoginTxT);
             this.tabPage1.Controls.Add(this.SenhaTxT);
             this.tabPage1.Controls.Add(this.label7);
@@ -146,16 +146,16 @@
             this.label8.TabIndex = 25;
             this.label8.Text = "Login ";
             // 
-            // button4
+            // CadastroBT
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(381, 29);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(119, 71);
-            this.button4.TabIndex = 29;
-            this.button4.Text = "Cadastrar";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.CadastroBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CadastroBT.Location = new System.Drawing.Point(381, 29);
+            this.CadastroBT.Name = "CadastroBT";
+            this.CadastroBT.Size = new System.Drawing.Size(119, 71);
+            this.CadastroBT.TabIndex = 29;
+            this.CadastroBT.Text = "Cadastrar";
+            this.CadastroBT.UseVisualStyleBackColor = true;
+            this.CadastroBT.Click += new System.EventHandler(this.button4_Click);
             // 
             // LoginTxT
             // 
@@ -228,7 +228,7 @@
         private System.Windows.Forms.TextBox NomeTxT;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button CadastroBT;
         private System.Windows.Forms.TextBox LoginTxT;
         private System.Windows.Forms.TextBox SenhaTxT;
         private System.Windows.Forms.Label label7;

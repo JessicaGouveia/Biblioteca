@@ -32,24 +32,8 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.novoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastroDeCategoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadstroDeColeçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mídiaDigitalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastroDeOrigemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cDToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.coleçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dVDToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.fantochesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.midiaFisicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mídiaDigitalToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configuraçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastroDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.label1 = new System.Windows.Forms.Label();
             this.NomeLogin = new System.Windows.Forms.Label();
@@ -68,6 +52,22 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cadastroDeCategoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadstroDeColeçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mídiaDigitalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroDeOrigemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cDToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.coleçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dVDToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.fantochesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.midiaFisicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mídiaDigitalToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.PainelDevoluçãoPendente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -106,42 +106,6 @@
             this.novoToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.novoToolStripMenuItem.Text = "Cadastros";
             // 
-            // cadastroDeCategoriaToolStripMenuItem
-            // 
-            this.cadastroDeCategoriaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cadastroDeCategoriaToolStripMenuItem.Image")));
-            this.cadastroDeCategoriaToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.cadastroDeCategoriaToolStripMenuItem.Name = "cadastroDeCategoriaToolStripMenuItem";
-            this.cadastroDeCategoriaToolStripMenuItem.Size = new System.Drawing.Size(212, 38);
-            this.cadastroDeCategoriaToolStripMenuItem.Text = "Cadastro de Categorias";
-            this.cadastroDeCategoriaToolStripMenuItem.Click += new System.EventHandler(this.cadastroDeCategoriaToolStripMenuItem_Click);
-            // 
-            // cadstroDeColeçãoToolStripMenuItem
-            // 
-            this.cadstroDeColeçãoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cadstroDeColeçãoToolStripMenuItem.Image")));
-            this.cadstroDeColeçãoToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.cadstroDeColeçãoToolStripMenuItem.Name = "cadstroDeColeçãoToolStripMenuItem";
-            this.cadstroDeColeçãoToolStripMenuItem.Size = new System.Drawing.Size(212, 38);
-            this.cadstroDeColeçãoToolStripMenuItem.Text = "Cadastro de Coleção";
-            this.cadstroDeColeçãoToolStripMenuItem.Click += new System.EventHandler(this.cadstroDeColeçãoToolStripMenuItem_Click);
-            // 
-            // mídiaDigitalToolStripMenuItem
-            // 
-            this.mídiaDigitalToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("mídiaDigitalToolStripMenuItem.Image")));
-            this.mídiaDigitalToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.mídiaDigitalToolStripMenuItem.Name = "mídiaDigitalToolStripMenuItem";
-            this.mídiaDigitalToolStripMenuItem.Size = new System.Drawing.Size(212, 38);
-            this.mídiaDigitalToolStripMenuItem.Text = "Cadastro de Mídia";
-            this.mídiaDigitalToolStripMenuItem.Click += new System.EventHandler(this.mídiaDigitalToolStripMenuItem_Click);
-            // 
-            // cadastroDeOrigemToolStripMenuItem
-            // 
-            this.cadastroDeOrigemToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cadastroDeOrigemToolStripMenuItem.Image")));
-            this.cadastroDeOrigemToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.cadastroDeOrigemToolStripMenuItem.Name = "cadastroDeOrigemToolStripMenuItem";
-            this.cadastroDeOrigemToolStripMenuItem.Size = new System.Drawing.Size(212, 38);
-            this.cadastroDeOrigemToolStripMenuItem.Text = "Cadastro de Origem";
-            this.cadastroDeOrigemToolStripMenuItem.Click += new System.EventHandler(this.cadastroDeOrigemToolStripMenuItem_Click);
-            // 
             // consultaToolStripMenuItem
             // 
             this.consultaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -156,69 +120,6 @@
             this.consultaToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.consultaToolStripMenuItem.Text = "Consulta";
             // 
-            // cDToolStripMenuItem1
-            // 
-            this.cDToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("cDToolStripMenuItem1.Image")));
-            this.cDToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.cDToolStripMenuItem1.Name = "cDToolStripMenuItem1";
-            this.cDToolStripMenuItem1.Size = new System.Drawing.Size(163, 38);
-            this.cDToolStripMenuItem1.Text = "CD";
-            this.cDToolStripMenuItem1.Click += new System.EventHandler(this.cDToolStripMenuItem1_Click);
-            // 
-            // coleçõesToolStripMenuItem
-            // 
-            this.coleçõesToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("coleçõesToolStripMenuItem.Image")));
-            this.coleçõesToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.coleçõesToolStripMenuItem.Name = "coleçõesToolStripMenuItem";
-            this.coleçõesToolStripMenuItem.Size = new System.Drawing.Size(163, 38);
-            this.coleçõesToolStripMenuItem.Text = "Coleções";
-            this.coleçõesToolStripMenuItem.Click += new System.EventHandler(this.coleçõesToolStripMenuItem_Click);
-            // 
-            // dVDToolStripMenuItem1
-            // 
-            this.dVDToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("dVDToolStripMenuItem1.Image")));
-            this.dVDToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.dVDToolStripMenuItem1.Name = "dVDToolStripMenuItem1";
-            this.dVDToolStripMenuItem1.Size = new System.Drawing.Size(163, 38);
-            this.dVDToolStripMenuItem1.Text = "DVD";
-            this.dVDToolStripMenuItem1.Click += new System.EventHandler(this.dVDToolStripMenuItem1_Click);
-            // 
-            // fantochesToolStripMenuItem1
-            // 
-            this.fantochesToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("fantochesToolStripMenuItem1.Image")));
-            this.fantochesToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.fantochesToolStripMenuItem1.Name = "fantochesToolStripMenuItem1";
-            this.fantochesToolStripMenuItem1.Size = new System.Drawing.Size(163, 38);
-            this.fantochesToolStripMenuItem1.Text = "Fantoches";
-            this.fantochesToolStripMenuItem1.Click += new System.EventHandler(this.fantochesToolStripMenuItem1_Click);
-            // 
-            // midiaFisicaToolStripMenuItem
-            // 
-            this.midiaFisicaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("midiaFisicaToolStripMenuItem.Image")));
-            this.midiaFisicaToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.midiaFisicaToolStripMenuItem.Name = "midiaFisicaToolStripMenuItem";
-            this.midiaFisicaToolStripMenuItem.Size = new System.Drawing.Size(163, 38);
-            this.midiaFisicaToolStripMenuItem.Text = "Livros";
-            this.midiaFisicaToolStripMenuItem.Click += new System.EventHandler(this.midiaFisicaToolStripMenuItem_Click);
-            // 
-            // mídiaDigitalToolStripMenuItem1
-            // 
-            this.mídiaDigitalToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("mídiaDigitalToolStripMenuItem1.Image")));
-            this.mídiaDigitalToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.mídiaDigitalToolStripMenuItem1.Name = "mídiaDigitalToolStripMenuItem1";
-            this.mídiaDigitalToolStripMenuItem1.Size = new System.Drawing.Size(163, 38);
-            this.mídiaDigitalToolStripMenuItem1.Text = "Livros Pop Up";
-            this.mídiaDigitalToolStripMenuItem1.Click += new System.EventHandler(this.mídiaDigitalToolStripMenuItem1_Click);
-            // 
-            // usuariosToolStripMenuItem
-            // 
-            this.usuariosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("usuariosToolStripMenuItem.Image")));
-            this.usuariosToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(163, 38);
-            this.usuariosToolStripMenuItem.Text = "Usuarios";
-            this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
-            // 
             // configuraçãoToolStripMenuItem
             // 
             this.configuraçãoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -227,47 +128,6 @@
             this.configuraçãoToolStripMenuItem.Name = "configuraçãoToolStripMenuItem";
             this.configuraçãoToolStripMenuItem.Size = new System.Drawing.Size(91, 20);
             this.configuraçãoToolStripMenuItem.Text = "Configuração";
-            // 
-            // cadastroDeUsuarioToolStripMenuItem
-            // 
-            this.cadastroDeUsuarioToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cadastroDeUsuarioToolStripMenuItem.Image")));
-            this.cadastroDeUsuarioToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.cadastroDeUsuarioToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.cadastroDeUsuarioToolStripMenuItem.Name = "cadastroDeUsuarioToolStripMenuItem";
-            this.cadastroDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(253, 38);
-            this.cadastroDeUsuarioToolStripMenuItem.Text = "Cadastro / Exclusão de Usuario";
-            this.cadastroDeUsuarioToolStripMenuItem.Click += new System.EventHandler(this.cadastroDeUsuarioToolStripMenuItem_Click);
-            // 
-            // cadastroToolStripMenuItem
-            // 
-            this.cadastroToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cadastroToolStripMenuItem.Image")));
-            this.cadastroToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(253, 38);
-            this.cadastroToolStripMenuItem.Text = "Cadastro / Exclusão de Pessoas";
-            this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(12, 20);
-            // 
-            // ajudaToolStripMenuItem
-            // 
-            this.ajudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sobreToolStripMenuItem});
-            this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
-            this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
-            this.ajudaToolStripMenuItem.Text = "Ajuda";
-            // 
-            // sobreToolStripMenuItem
-            // 
-            this.sobreToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("sobreToolStripMenuItem.Image")));
-            this.sobreToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(129, 38);
-            this.sobreToolStripMenuItem.Text = "Sobre...";
-            this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
             // 
             // splitter1
             // 
@@ -295,7 +155,6 @@
             this.NomeLogin.Size = new System.Drawing.Size(51, 13);
             this.NomeLogin.TabIndex = 6;
             this.NomeLogin.Text = "System ";
-            this.NomeLogin.Click += new System.EventHandler(this.NomeLogin_Click);
             // 
             // BotaoEmprestimo
             // 
@@ -461,6 +320,146 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
+            // 
+            // cadastroDeCategoriaToolStripMenuItem
+            // 
+            this.cadastroDeCategoriaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cadastroDeCategoriaToolStripMenuItem.Image")));
+            this.cadastroDeCategoriaToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.cadastroDeCategoriaToolStripMenuItem.Name = "cadastroDeCategoriaToolStripMenuItem";
+            this.cadastroDeCategoriaToolStripMenuItem.Size = new System.Drawing.Size(212, 38);
+            this.cadastroDeCategoriaToolStripMenuItem.Text = "Cadastro de Categorias";
+            this.cadastroDeCategoriaToolStripMenuItem.Click += new System.EventHandler(this.cadastroDeCategoriaToolStripMenuItem_Click);
+            // 
+            // cadstroDeColeçãoToolStripMenuItem
+            // 
+            this.cadstroDeColeçãoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cadstroDeColeçãoToolStripMenuItem.Image")));
+            this.cadstroDeColeçãoToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.cadstroDeColeçãoToolStripMenuItem.Name = "cadstroDeColeçãoToolStripMenuItem";
+            this.cadstroDeColeçãoToolStripMenuItem.Size = new System.Drawing.Size(212, 38);
+            this.cadstroDeColeçãoToolStripMenuItem.Text = "Cadstro de Coleção";
+            this.cadstroDeColeçãoToolStripMenuItem.Click += new System.EventHandler(this.cadstroDeColeçãoToolStripMenuItem_Click);
+            // 
+            // mídiaDigitalToolStripMenuItem
+            // 
+            this.mídiaDigitalToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("mídiaDigitalToolStripMenuItem.Image")));
+            this.mídiaDigitalToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.mídiaDigitalToolStripMenuItem.Name = "mídiaDigitalToolStripMenuItem";
+            this.mídiaDigitalToolStripMenuItem.Size = new System.Drawing.Size(212, 38);
+            this.mídiaDigitalToolStripMenuItem.Text = "Cadastro de Mídia";
+            this.mídiaDigitalToolStripMenuItem.Click += new System.EventHandler(this.mídiaDigitalToolStripMenuItem_Click);
+            // 
+            // cadastroDeOrigemToolStripMenuItem
+            // 
+            this.cadastroDeOrigemToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cadastroDeOrigemToolStripMenuItem.Image")));
+            this.cadastroDeOrigemToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.cadastroDeOrigemToolStripMenuItem.Name = "cadastroDeOrigemToolStripMenuItem";
+            this.cadastroDeOrigemToolStripMenuItem.Size = new System.Drawing.Size(212, 38);
+            this.cadastroDeOrigemToolStripMenuItem.Text = "Cadastro de Origem";
+            this.cadastroDeOrigemToolStripMenuItem.Click += new System.EventHandler(this.cadastroDeOrigemToolStripMenuItem_Click);
+            // 
+            // cDToolStripMenuItem1
+            // 
+            this.cDToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("cDToolStripMenuItem1.Image")));
+            this.cDToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.cDToolStripMenuItem1.Name = "cDToolStripMenuItem1";
+            this.cDToolStripMenuItem1.Size = new System.Drawing.Size(163, 38);
+            this.cDToolStripMenuItem1.Text = "CD";
+            this.cDToolStripMenuItem1.Click += new System.EventHandler(this.cDToolStripMenuItem1_Click);
+            // 
+            // coleçõesToolStripMenuItem
+            // 
+            this.coleçõesToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("coleçõesToolStripMenuItem.Image")));
+            this.coleçõesToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.coleçõesToolStripMenuItem.Name = "coleçõesToolStripMenuItem";
+            this.coleçõesToolStripMenuItem.Size = new System.Drawing.Size(163, 38);
+            this.coleçõesToolStripMenuItem.Text = "Coleções";
+            this.coleçõesToolStripMenuItem.Click += new System.EventHandler(this.coleçõesToolStripMenuItem_Click);
+            // 
+            // dVDToolStripMenuItem1
+            // 
+            this.dVDToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("dVDToolStripMenuItem1.Image")));
+            this.dVDToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.dVDToolStripMenuItem1.Name = "dVDToolStripMenuItem1";
+            this.dVDToolStripMenuItem1.Size = new System.Drawing.Size(163, 38);
+            this.dVDToolStripMenuItem1.Text = "DVD";
+            this.dVDToolStripMenuItem1.Click += new System.EventHandler(this.dVDToolStripMenuItem1_Click);
+            // 
+            // fantochesToolStripMenuItem1
+            // 
+            this.fantochesToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("fantochesToolStripMenuItem1.Image")));
+            this.fantochesToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.fantochesToolStripMenuItem1.Name = "fantochesToolStripMenuItem1";
+            this.fantochesToolStripMenuItem1.Size = new System.Drawing.Size(163, 38);
+            this.fantochesToolStripMenuItem1.Text = "Fantoches";
+            this.fantochesToolStripMenuItem1.Click += new System.EventHandler(this.fantochesToolStripMenuItem1_Click);
+            // 
+            // midiaFisicaToolStripMenuItem
+            // 
+            this.midiaFisicaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("midiaFisicaToolStripMenuItem.Image")));
+            this.midiaFisicaToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.midiaFisicaToolStripMenuItem.Name = "midiaFisicaToolStripMenuItem";
+            this.midiaFisicaToolStripMenuItem.Size = new System.Drawing.Size(163, 38);
+            this.midiaFisicaToolStripMenuItem.Text = "Livros";
+            this.midiaFisicaToolStripMenuItem.Click += new System.EventHandler(this.midiaFisicaToolStripMenuItem_Click);
+            // 
+            // mídiaDigitalToolStripMenuItem1
+            // 
+            this.mídiaDigitalToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("mídiaDigitalToolStripMenuItem1.Image")));
+            this.mídiaDigitalToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.mídiaDigitalToolStripMenuItem1.Name = "mídiaDigitalToolStripMenuItem1";
+            this.mídiaDigitalToolStripMenuItem1.Size = new System.Drawing.Size(163, 38);
+            this.mídiaDigitalToolStripMenuItem1.Text = "Livros Pop Up";
+            this.mídiaDigitalToolStripMenuItem1.Click += new System.EventHandler(this.mídiaDigitalToolStripMenuItem1_Click);
+            // 
+            // usuariosToolStripMenuItem
+            // 
+            this.usuariosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("usuariosToolStripMenuItem.Image")));
+            this.usuariosToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(163, 38);
+            this.usuariosToolStripMenuItem.Text = "Usuarios";
+            this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
+            // 
+            // cadastroDeUsuarioToolStripMenuItem
+            // 
+            this.cadastroDeUsuarioToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cadastroDeUsuarioToolStripMenuItem.Image")));
+            this.cadastroDeUsuarioToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.cadastroDeUsuarioToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.cadastroDeUsuarioToolStripMenuItem.Name = "cadastroDeUsuarioToolStripMenuItem";
+            this.cadastroDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(280, 38);
+            this.cadastroDeUsuarioToolStripMenuItem.Text = "Cadastro / Exclusão de Usuario";
+            this.cadastroDeUsuarioToolStripMenuItem.Click += new System.EventHandler(this.cadastroDeUsuarioToolStripMenuItem_Click);
+            // 
+            // cadastroToolStripMenuItem
+            // 
+            this.cadastroToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cadastroToolStripMenuItem.Image")));
+            this.cadastroToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
+            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(280, 38);
+            this.cadastroToolStripMenuItem.Text = "Cadastro / Exclusão de Funcionarios";
+            this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(12, 20);
+            // 
+            // ajudaToolStripMenuItem
+            // 
+            this.ajudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sobreToolStripMenuItem});
+            this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
+            this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.ajudaToolStripMenuItem.Text = "Ajuda";
+            // 
+            // sobreToolStripMenuItem
+            // 
+            this.sobreToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("sobreToolStripMenuItem.Image")));
+            this.sobreToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.sobreToolStripMenuItem.Text = "Sobre...";
+            this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
             // 
             // FmrIndex
             // 

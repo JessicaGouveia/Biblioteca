@@ -1,4 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SystemTeca
@@ -15,10 +22,18 @@ namespace SystemTeca
         Consulta.FmrConsultaLivrosPU FmrConsultaLivrosPU = new Consulta.FmrConsultaLivrosPU();
         Consulta.FmrConsulta_Usuarios FmrConsulta_Usuarios = new Consulta.FmrConsulta_Usuarios();
 
+        public string Valor = "" ;
+
         public FmrIndex()
         {
             InitializeComponent();
-            NomeLogin.Text = Usuario.LoginUsuario.NomePessoa;
+        }
+
+        public FmrIndex( string Valor )
+        {
+            InitializeComponent();
+            NomeLogin.Text = Valor;
+            this.Valor = Valor;
         }
 
         private void Sair_Click(object sender, EventArgs e)
@@ -141,11 +156,6 @@ namespace SystemTeca
             Ajuda.FmrAjudaSobre FmrAjuda = new Ajuda.FmrAjudaSobre();
 
             FmrAjuda.Show();
-        }
-
-        private void NomeLogin_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

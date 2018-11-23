@@ -3,11 +3,13 @@ using System.Data;
 using System.Linq;
 using SystemTeca.Models;
 using Dapper;
+using System;
 
 namespace SystemTeca.Controllers
 {
     public class UsuarioController
     {
+
 
         #region Select
         public IEnumerable<UsuarioModel> ConsultaTodos()
@@ -62,5 +64,7 @@ namespace SystemTeca.Controllers
                 },
                 commandType: CommandType.StoredProcedure).FirstOrDefault();
         }
+
+
     }
 }
